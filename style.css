@@ -2,8 +2,7 @@ html>body>header>nav {
     background-color: rgba(255, 255, 255, 0.74)!important;
 }
 header {
-  background-image: url(bilder/bg.jpg);
-  background-size: cover;
+    background-color: lightskyblue;
 }
 body {
     background-color: grey;
