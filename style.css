@@ -1,75 +1,85 @@
 html>body>nav {
-    background-color: rgba(0, 0, 0, 0.75)!important;
+    background-color: rgba(0, 0, 0, 0.75);
 }
+
 body {
-    background-image: url(bilder/bg.jpg)!important;
-    background-size: 100%!important;
+    background-image: url(bilder/bg.jpg);
+    background-size: 100%;
 }
+
 body>div>div#news {
-    background-color: rgba(0, 0, 0, 0.75)!important;
-    color: white!important;
-    float: right!important;
-    width: 40%!important;
-    margin: 30px!important;
-    padding: 10px!important;
-    border-style: solid!important;
-    border-color: rgb(195, 225, 234)!important;
-    border-radius: 8px!important;
-    border-width: 5px!important;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    float: right;
+    width: 40%;
+    margin: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(195, 225, 234);
+    border-radius: 8px;
+    border-width: 5px;
 }
+
 body>div#about {
-    background-color: rgba(0, 0, 0, 0.75)!important;
-    color: white!important;
-    float: left!important;
-    margin: 30px!important;
-    padding: 10px!important;
-    border-style: solid!important;
-    border-color: rgb(195, 225, 234)!important;
-    border-radius: 8px!important;
-    border-width: 5px!important;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    float: left;
+    margin: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(195, 225, 234);
+    border-radius: 8px;
+    border-width: 5px;
 }
-body>nav>div>ul>li>a, body>nav>div>ul>li>div>a {
-    color: white!important;
+
+body>nav>div>ul>li>a,
+body>nav>div>ul>li>div>a {
+    color: white;
 }
+
 nav a:hover {
-text-decoration: underline!important;
-background-color: rgb(24, 24, 24)!important;
+    text-decoration: underline;
+    background-color: rgb(24, 24, 24);
 }
+
 body>nav>div>ul>li>a:hover {
-    text-decoration: underline!important;
-    background: none!important;
-    }
-body>nav>div>ul>li>div {
-    background-color: black!important;
+    text-decoration: underline;
+    background: none;
 }
+
+body>nav>div>ul>li>div {
+    background-color: black;
+}
+
 #scrollPath {
     position: fixed;
     top: 0;
     right: 0;
     width: 10px;
     height: 100%;
-    background: rgba(255,255,255,0.05);
-  }
-  
-  #progressbar {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar {
     position: fixed;
     top: 0;
     right: 0;
     width: 10px;
     background: linear-gradient(to top, #008aff, #00ffe7);
     animation: animate 5s linear infinite;
-  }
-  
-  @keyframes animate {
-    0%,100% {
-      filter: hue-rotate(0deg);
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
     }
     50% {
-      filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
     }
-  }
-  
-  #progressbar:before {
+}
+
+#progressbar:before {
     content: '';
     position: absolute;
     top: 0;
@@ -78,9 +88,9 @@ body>nav>div>ul>li>div {
     height: 100%;
     background: linear-gradient(to top, #008aff, #00ffe7);
     filter: blur(30px);
-  }
-  
-  #progressbar:after {
+}
+
+#progressbar:after {
     content: '';
     position: absolute;
     top: 0;
@@ -89,4 +99,4 @@ body>nav>div>ul>li>div {
     height: 100%;
     background: linear-gradient(to top, #008aff, #00ffe7);
     filter: blur(30px);
-  }
+}
