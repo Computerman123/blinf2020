@@ -1,8 +1,11 @@
 # blinf2020
+<<<<<<< HEAD
 test
 Test - Labhart
 Test - Fabio
 Geht es jetzt?
-Hallo
-Test vom Laptop
-Sieht man das?
+Test Branch
+remote branch test
+=======
+Bereinigung
+>>>>>>> main
