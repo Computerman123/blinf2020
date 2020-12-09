@@ -1,9 +1,12 @@
 html>body>header>nav {
     background-color: rgba(0, 0, 0, 0.75)!important;
 }
+header {
+  background-image: url(bilder/bg.jpg);
+  background-size: cover;
+}
 body {
-    background-image: url(bilder/bg.jpg)!important;
-    background-size: 100%!important;
+    background-color: grey;
 }
 body>div>div#news {
     background-color: rgba(0, 0, 0, 0.75)!important;
