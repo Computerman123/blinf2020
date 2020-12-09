@@ -1,0 +1,9 @@
+.logo {
+    width: 200px;
+    height: 200px;
+}
+.nav-item:hover {
+    cursor: pointer;
+    background-color: lightskyblue;
+    transition: 1s;
+}
