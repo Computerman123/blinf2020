@@ -1,0 +1,120 @@
+header {
+    background-color: rgb(49, 124, 204);
+  }
+  body {
+    background-color: white;
+  }
+  body>header>nav>div>ul>li>a{
+    color: white !important;
+    font-size: 30px;
+  }
+  body>header>nav>div>ul>li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  }
+  body>main>div.content {
+    background-color: white;
+    color:  rgb(11, 106, 194);
+    float: right;
+    margin: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(195, 225, 234);
+    border-radius: 8px;
+    border-width: 5px;
+  }
+  body>main>div>div.perscon>h1 {
+      display: flex;
+      justify-content: center;
+      margin: 5px 5px 50px 5px;
+  }
+  body>main>div>div.perscon>div.tuebermich{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 15px 5px 15px;
+    border-style: solid;
+    border-color: rgb(195, 225, 234);
+    border-radius: 8px;
+    border-width: 5px;
+  }
+  body>main>div>div.perscon>div.luebermich {
+    display: flex;
+    justify-content: left;
+    border-style: solid;
+    border-color: rgb(195, 225, 234);
+    border-radius: 8px;
+    border-width: 5px;
+  }
+  body>main>div>div.name-bar {
+      display: flex;
+      justify-content: space-around;
+  }
+  body>main>div>div>a {
+      text-decoration: none;
+      color: rgb(11, 106, 194);
+  }
+  body>main>div>div>a:hover {
+      text-decoration: none;
+      color: rgb(13, 71, 126);
+  }
+  body>main>div>div.perscon {
+    background-color: white;
+    color:  rgb(11, 106, 194);
+    float: right;
+    margin: 30px;
+    padding: 10px;
+  }
+  #perspic {
+      width: 25%;
+      float: left;
+      margin: 0px 60px 0px 0px;
+  }
+  
+  #scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255,255,255,0.05);
+  }
+  
+  #progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+  }
+  
+  @keyframes animate {
+  0%,100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+  }
+  
+  #progressbar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+  }
+  
+  #progressbar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(30px);
+  }
