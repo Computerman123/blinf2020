@@ -17,6 +17,29 @@ body>div>div#news {
   border-width: 5px;
   
 }
+body>div>div#beschreibung {
+  background-color: white;
+  color:  rgb(11, 106, 194);
+  float: right;
+  width: 60%;
+  margin: 30px;
+  padding: 10px;
+  border-style: solid;
+  border-color: rgb(195, 225, 234);
+  border-radius: 8px;
+  border-width: 5px;
+}
+body>div#ueberuns {
+  background-color: white;
+  color:  rgb(11, 106, 194);
+  float: left;
+  margin: 30px;
+  padding: 10px;
+  border-style: solid;
+  border-color: rgb(195, 225, 234);
+  border-radius: 8px;
+  border-width: 5px;
+}
 body>div>div#link123 {
   background-color: white;
   color:  rgb(11, 106, 194);
@@ -105,4 +128,8 @@ iframe {
   border-color: rgb(195, 225, 234);
   border-radius: 8px;
   border-width: 5px;
+}
+div#ueberuns>img {
+  max-width: 30%;
+  margin: 30px 20px 20px 30px;
 }
