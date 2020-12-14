@@ -8,6 +8,19 @@ body>div>div#news {
   background-color: white;
   color:  rgb(11, 106, 194);
   float: right;
+  width: 40%;
+  margin: 30px;
+  padding: 10px;
+  border-style: solid;
+  border-color: rgb(195, 225, 234);
+  border-radius: 8px;
+  border-width: 5px;
+  
+}
+body>div>div#link123 {
+  background-color: white;
+  color:  rgb(11, 106, 194);
+  float: right;
   width: fit-content;
   margin: 30px;
   padding: 10px;
@@ -86,4 +99,10 @@ filter: blur(30px);
 iframe {
   width: 100%;
   border-radius: 10px;
+}
+.tab-content div.card-body {
+  border-style: solid;
+  border-color: rgb(195, 225, 234);
+  border-radius: 8px;
+  border-width: 5px;
 }
