@@ -17,6 +17,41 @@ body>main>div>div#news {
   border-style: solid;
   border-color: rgb(195, 225, 234);
   border-radius: 8px;
+  border-width: 5px; 
+}
+body>div>div#beschreibung {
+  background-color: white;
+  color:  rgb(11, 106, 194);
+  float: right;
+  width: 60%;
+  margin: 30px;
+  padding: 10px;
+  border-style: solid;
+  border-color: rgb(195, 225, 234);
+  border-radius: 8px;
+  border-width: 5px;
+}
+body>div#ueberuns {
+  background-color: white;
+  color:  rgb(11, 106, 194);
+  float: left;
+  margin: 30px;
+  padding: 10px;
+  border-style: solid;
+  border-color: rgb(195, 225, 234);
+  border-radius: 8px;
+  border-width: 5px;
+}
+body>div>div#link123 {
+  background-color: white;
+  color:  rgb(11, 106, 194);
+  float: right;
+  width: fit-content;
+  margin: 30px;
+  padding: 10px;
+  border-style: solid;
+  border-color: rgb(195, 225, 234);
+  border-radius: 8px;
   border-width: 5px;
 }
 body>main>div#about {
@@ -95,4 +130,18 @@ width: 100%;
 height: 100%;
 background: linear-gradient(to top, #008aff, #00ffe7);
 filter: blur(30px);
+}
+iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+.tab-content div.card-body {
+  border-style: solid;
+  border-color: rgb(195, 225, 234);
+  border-radius: 8px;
+  border-width: 5px;
+}
+div#ueberuns>img {
+  max-width: 30%;
+  margin: 30px 20px 20px 30px;
 }
