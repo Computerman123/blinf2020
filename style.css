@@ -1,8 +1,10 @@
 header {
   background-color: rgb(49, 124, 204);
+  flex-grow: 1;
 }
 body {
   background-color: white;
+  display: flex;
 }
 body>main>div>div#news {
   background-color: white;
@@ -70,6 +72,9 @@ body>header>nav>div>ul>li:hover {
 text-decoration: underline;
 cursor: pointer;
 }
+main {
+  flex-grow: 2;
+}
 #scrollPath {
 position: fixed;
 top: 0;
@@ -136,6 +141,7 @@ div#footer {
   background-color: rgb(49, 124, 204);
   padding: 20px;
   margin-top: 20px;
+  flex-grow: 1;
 }
 div#footer p#rechts {
 float: right;
