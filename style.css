@@ -135,6 +135,7 @@ div#ueberuns>img {
 div#footer {
   background-color: rgb(49, 124, 204);
   padding: 20px;
+  margin-top: 20px;
 }
 div#footer p#rechts {
 float: right;
