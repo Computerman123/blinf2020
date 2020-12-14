@@ -145,3 +145,13 @@ div#ueberuns>img {
   max-width: 30%;
   margin: 30px 20px 20px 30px;
 }
+div#footer {
+  background-color: rgb(49, 124, 204);
+  padding: 20px;
+}
+div#footer p#rechts {
+float: right;
+}
+div#footer p#links {
+  float: left;
+  }
