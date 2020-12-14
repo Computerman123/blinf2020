@@ -142,3 +142,6 @@ float: right;
 div#footer p#links {
   float: left;
   }
+  .timabs {
+    margin-bottom: 15px;
+  }
