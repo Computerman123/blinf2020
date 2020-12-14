@@ -5,6 +5,7 @@ header {
 body {
   background-color: white;
   display: flex;
+  flex-direction: column;
 }
 body>main>div>div#news {
   background-color: white;
