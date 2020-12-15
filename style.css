@@ -187,3 +187,6 @@ text-decoration: underline;
   height: 116px!important;
   width: 82px!important;
 }
+.tab-content img#timon {
+  max-width: 300px!important;
+}
