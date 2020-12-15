@@ -153,3 +153,6 @@ div#footer p#links {
   .timabs {
     margin-bottom: 15px;
   }
+  footer a {
+    color: white!important;
+  }
