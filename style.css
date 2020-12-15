@@ -184,8 +184,8 @@ padding: 20px;
 text-decoration: underline;
 }
 .tab-content img#fabio {
-  height: 100%!important;
-  width: 100%!important;
+  height: 50%!important;
+  width: 50%!important;
 }
 .tab-content img#timon {
   max-width: 300px!important;
