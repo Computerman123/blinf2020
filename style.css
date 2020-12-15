@@ -133,6 +133,7 @@ iframe {
   border-color: rgb(195, 225, 234);
   border-radius: 8px;
   border-width: 5px;
+  padding: 20px;
 }
 div#ueberuns>img {
   max-width: 30%;
@@ -156,3 +157,21 @@ div#footer p#links {
   footer a {
     color: white!important;
   }
+ *.tab-content img {
+   max-width: 500px;
+    width: 100%;
+  border-radius: 7px;
+  margin: 20px;
+ }
+.tuebermich {
+
+width: 100%;
+border-style: solid;
+border-color: rgb(195, 225, 234);
+border-radius: 8px;
+border-width: 5px;
+padding: 20px;
+}
+.luebermich {
+  padding: 20px;
+}
