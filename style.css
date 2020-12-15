@@ -180,3 +180,7 @@ padding: 20px;
   padding: 0px;
   margin: 10px 10px;
 }
+.nav-link:hover {
+text-decoration: underline;
+color: white;
+}
