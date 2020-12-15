@@ -125,8 +125,9 @@ background: linear-gradient(to top, #008aff, #00ffe7);
 filter: blur(30px);
 }
 iframe {
-  width: 100%;
+  width: 90%;
   border-radius: 10px;
+  margin: 10px 30px;
 }
 .tab-content div.card-body {
   border-style: solid;
@@ -174,4 +175,8 @@ padding: 20px;
 }
 .luebermich {
   padding: 20px;
+}
+.timmark.container-fluid {
+  padding: 0px;
+  margin: 10px 10px;
 }
