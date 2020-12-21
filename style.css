@@ -1,195 +1,221 @@
 header {
-  background-color: rgb(49, 124, 204);
-  flex-grow: 1;
+    background-color: rgb(49, 124, 204);
+    flex-grow: 1;
 }
+
 body {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
 }
+
 body>main>div>div#news {
-  background-color: white;
-  color:  rgb(11, 106, 194);
-  float: right;
-  width: 40%;
-  margin: 30px;
-  padding: 10px;
-  border-style: solid;
-  border-color: rgb(195, 225, 234);
-  border-radius: 8px;
-  border-width: 5px; 
+    background-color: white;
+    color: rgb(11, 106, 194);
+    float: right;
+    width: 40%;
+    margin: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(195, 225, 234);
+    border-radius: 8px;
+    border-width: 5px;
 }
+
 body>div>div#beschreibung {
-  background-color: white;
-  color:  rgb(11, 106, 194);
-  float: right;
-  width: 60%;
-  margin: 30px;
-  padding: 10px;
-  border-style: solid;
-  border-color: rgb(195, 225, 234);
-  border-radius: 8px;
-  border-width: 5px;
+    background-color: white;
+    color: rgb(11, 106, 194);
+    float: right;
+    width: 60%;
+    margin: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(195, 225, 234);
+    border-radius: 8px;
+    border-width: 5px;
 }
+
 body>div#ueberuns {
-  background-color: white;
-  color:  rgb(11, 106, 194);
-  float: left;
-  margin: 30px;
-  padding: 10px;
-  border-style: solid;
-  border-color: rgb(195, 225, 234);
-  border-radius: 8px;
-  border-width: 5px;
+    background-color: white;
+    color: rgb(11, 106, 194);
+    float: left;
+    margin: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(195, 225, 234);
+    border-radius: 8px;
+    border-width: 5px;
 }
+
 body>div>div#link123 {
-  background-color: white;
-  color:  rgb(11, 106, 194);
-  float: right;
-  width: fit-content;
-  margin: 30px;
-  padding: 10px;
-  border-style: solid;
-  border-color: rgb(195, 225, 234);
-  border-radius: 8px;
-  border-width: 5px;
+    background-color: white;
+    color: rgb(11, 106, 194);
+    float: right;
+    width: fit-content;
+    margin: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(195, 225, 234);
+    border-radius: 8px;
+    border-width: 5px;
 }
+
 body>main>div#about {
-  background-color: white;
-  color:  rgb(11, 106, 194);
-  float: left;
-  margin: 30px;
-  padding: 10px;
-  border-style: solid;
-  border-color: rgb(195, 225, 234);
-  border-radius: 8px;
-  border-width: 5px;
+    background-color: white;
+    color: rgb(11, 106, 194);
+    float: left;
+    margin: 30px;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(195, 225, 234);
+    border-radius: 8px;
+    border-width: 5px;
 }
-body>header>nav>div>ul>li>a{
-  color: white !important;
-  font-size: 25px;
+
+body>header>nav>div>ul>li>a {
+    color: white !important;
+    font-size: 25px;
 }
+
 body>header>nav>div>ul>li:hover {
-text-decoration: underline;
-cursor: pointer;
+    text-decoration: underline;
+    cursor: pointer;
 }
+
 main {
-  flex-grow: 2;
+    flex-grow: 2;
 }
+
 #scrollPath {
-position: fixed;
-top: 0;
-right: 0;
-width: 10px;
-height: 100%;
-background: rgba(255,255,255,0.05);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 #progressbar {
-position: fixed;
-top: 0;
-right: 0;
-width: 10px;
-background: linear-gradient(to top, #008aff, #00ffe7);
-animation: animate 5s linear infinite;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite;
 }
 
 @keyframes animate {
-0%,100% {
-  filter: hue-rotate(0deg);
-}
-50% {
-  filter: hue-rotate(360deg);
-}
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
 }
 
 #progressbar:before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: linear-gradient(to top, #008aff, #00ffe7);
-filter: blur(30px);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
 }
 
 #progressbar:after {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: linear-gradient(to top, #008aff, #00ffe7);
-filter: blur(30px);
-}
-iframe {
-  width: 90%;
-  border-radius: 10px;
-  margin: 10px 30px;
-}
-.tab-content div.card-body {
-  border-style: solid;
-  border-color: rgb(195, 225, 234);
-  border-radius: 8px;
-  border-width: 5px;
-  padding: 20px;
-}
-div#ueberuns>img {
-  max-width: 30%;
-  margin: 30px 20px 20px 30px;
-}
-div#footer {
-  background-color: rgb(49, 124, 204);
-  padding: 20px;
-  margin-top: 20px;
-  flex-grow: 1;
-}
-div#footer p#rechts {
-float: right;
-}
-div#footer p#links {
-  float: left;
-  }
-  .timabs {
-    margin-bottom: 15px;
-  }
-  footer a {
-    color: white!important;
-  }
- *.tab-content img {
-   max-width: 500px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-  border-radius: 7px;
-  margin: 20px;
- }
-.tuebermich {
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
 
-width: 100%;
-border-style: solid;
-border-color: rgb(195, 225, 234);
-border-radius: 8px;
-border-width: 5px;
-padding: 20px;
+iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
 }
+
+.tab-content div.card-body {
+    border-style: solid;
+    border-color: rgb(195, 225, 234);
+    border-radius: 8px;
+    border-width: 5px;
+    padding: 20px;
+}
+
+div#ueberuns>img {
+    max-width: 30%;
+    margin: 30px 20px 20px 30px;
+}
+
+div#footer {
+    background-color: rgb(49, 124, 204);
+    padding: 20px;
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+div#footer p#rechts {
+    float: right;
+}
+
+div#footer p#links {
+    float: left;
+}
+
+.timabs {
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: white!important;
+}
+
+*.tab-content img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 7px;
+    margin: 20px;
+}
+
+.tuebermich {
+    width: 100%;
+    border-style: solid;
+    border-color: rgb(195, 225, 234);
+    border-radius: 8px;
+    border-width: 5px;
+    padding: 20px;
+}
+
 .luebermich {
-  padding: 20px;
+    padding: 20px;
 }
+
 .timmark.container-fluid {
-  padding: 0px;
-  margin: 10px 10px;
+    padding: 0px;
+    margin: 10px 10px;
 }
+
 .nav-link:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
+
 .tab-content img#fabio {
-  height: 134px!important;
-  width: 100px!important;
+    height: 134px!important;
+    width: 100px!important;
 }
+
 .tab-content img#timon {
-  max-width: 300px!important;
+    max-width: 300px!important;
 }
+
 #cheyenne {
-  width: 15%;
+    width: 15%;
 }
