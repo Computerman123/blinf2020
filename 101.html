@@ -125,7 +125,76 @@
                 <h3 id="kapitel4">Kapitel 4 - Links</h3><br>
                 <h3 id="kapitel5">Kapitel 5 - Bilder</h3><br>
                 <h3 id="kapitel6">Kapitel 6 - Tabellen</h3><br>
+                <hr />
                 <h3 id="kapitel7">Kapitel 7 - Formulare</h3><br>
+                <p> in eine Webseite einzubauen ist ein guter Weg, um Informationen vom User zu bekommen aber zieht auch einige Sachen mit sich zu beachten sind folgende Punkte:</p>
+
+<ul>
+                    <li><p>Wenn man Nutzerdaten speichert ist man automatisch f&#xFC;r deren Sicherheit verantwortlich.</p></li>
+<li><p>Wenn man Nutzerdaten speichert muss man dem Benutzer mitteilen was f&#xFC;r Daten gespeichert werden, wozu sie gebraucht werden und an wen man sie weitergibt</p></li> 
+<li><p>Daten sollten generell verschl&#xFC;sselt &#xFC;bertragen werden, vor allem Sensitive.</p></li>
+</ul>
+<p> Formulare bilden sich aus einem &#x3C;form&#x3E;-Element in welches man verschiedene &#x3C;input&#x3E;-Elemente einf&#xFC;gt sowie ein&#x3C;button type=&#x201C;submit&#x201C;&#x3E;-Element um die Eingabe zu best&#xE4;tigen und das Formular abzuschicken. Mit einem &#x3C;label&#x3E;-Element kann man dann dem Benutzer anzeigen was in das Feld eingegeben werden sollte.</p>
+
+<p> Mit hilfe des &#x3C;fieldset&#x3E;-Element kann man verschiedene &#x3C;input&#x3E;-Elemente Gruppieren und mit hilfe des &#x3C;legend&#x3E;-Elements diese Gruppe beschriften.</p>
+
+<!--Platzhalter für Codepen-->
+
+<p>Es gibt verschiedene type=&#x201C;&#x201C; Attribute welche man verwenden kann um verschiedene eingaben zu t&#xE4;tigen:</p>
+<h4>Type=&#x201C;text&#x201C;</h4>
+<p>Es k&#xF6;nnen einfache Texteingaben gemacht werden.</p>
+<!--Platzhalter für Codepen-->
+<h4>Type=&#x201C;password&#x201C;</h4>
+<p>F&#xFC;r Passworteingaben, der Text wird als ****** angezeigt aber trotzdem unverschl&#xFC;sselt &#xFC;bertragen.</p>
+<!--Platzhalter für Codepen-->
+<h4>&#x3C;textarea&#x3E;</h4>
+<p>Wie type=&#x201C;text&#x201C; aber gr&#xF6;sser und ein eigenes Element.</p>
+<!--Platzhalter für Codepen-->
+<h4>Type=&#x201C;radio&#x201C;</h4>
+<p>F&#xFC;gt Radio Kn&#xF6;pfe ein von denen nur einer ausgew&#xE4;hlt sein kann.</p>
+<!--Platzhalter für Codepen--> 
+<p>Jedoch macht dies nur die Kn&#xF6;pfe um sie zu beschriften braucht man noch ein &#x3C;label&#x3E;-Element</p>
+<h4>&#x3C;label&#x3E;</h4>
+<p>Mit einem &#x3C;label&#x3E;-Element kann man &#x3C;input&#x3E;-Elemente beschriften mit Hilfe der id</p>
+<!--Platzhalter für Codepen-->
+<h4>Type=&#xBB;checkbox&#xBB;</h4>
+<p>Checkboxen sind wie Radio Buttons einfach dass man mehrere ausw&#xE4;hlen kann.</p>
+ <!--Platzhalter für Codepen-->
+<h4>&#x3C;select&#x3E; &#x26; &#x3C;option&#x3E;</h4>
+<p>Mit einem &#x3C;select&#x3E;-Element kann man ein Dropdown Men&#xFC; machen aber um darin Optionen machen zu k&#xF6;nnen braucht man &#x3C;option&#x3E;-Elemente.</p>
+<!--Platzhalter für Codepen-->
+<p>Durch das hinzuf&#xFC;gen von multiple=&#x201C;multiple&#x201C; lassen sich mehrere ausw&#xE4;hlen.</p>
+<h4>Type=&#x201C;file&#x201C;</h4>
+<p>Erlaubt es dem User Dateien vom System hochzuladen</p>
+<!--Platzhalter für Codepen-->
+<h4>Type=&#x201C;submit&#x201C;</h4>
+<p>Um ein Formular abzuschicken muss man auf den submit Button dr&#xFC;cken</p>
+<!--Platzhalter für Codepen-->
+<h4>Type=&#x201C;hidden&#x201C;</h4>
+<p>Verstecktes Eingabe Feld, kann verwendet werden um lokal gecashte Daten mit dem Formular zu &#xFC;bermitteln</p>
+<h4>Required=&#x201C;required&#x201C;</h4>
+<p>Wenn dieses Attribut in einem &#x3C;input&#x3E;-Element oder &#xE4;hnlichem ist kann das Formular nicht abgesendet werden wenn keine Eingabe / Auswahl getroffen wurde.</p>
+<!--Platzhalter für Codepen-->
+<h4>Type=&#x201C;date&#x201C;</h4>
+<p>Ein Datum kann ausgew&#xE4;hlt werden</p>
+<!--Platzhalter für Codepen-->
+<h4>Type=&#x201C;email&#x201C;</h4>
+<p>Eingabefeld das nur E-Mail Formate anerkennt.</p>
+
+<!--Platzhalter für Codepen-->
+<h4>Type=&#x201C;url&#x201C;</h4>
+<p>Eingabefeld das nur URLs anerkennt.</p>
+
+<!--Platzhalter für Codepen-->
+<h4>Type=&#x201C;search&#x201C;</h4>
+<p>Einzeiliges Textfeld, braucht noch zus&#xE4;tzlichen Code f&#xFC;r Funktionalit&#xE4;t.</p>
+
+<!--Platzhalter für Codepen-->
+<h4>placeholder=&#x201C;&#x201C;</h4>
+<p>F&#xFC;gt einen Platzhalter Text in Formular Felder ein der Verschwindet bei einer Eingabe</p>
+
+<!--Platzhalter für Codepen-->
+<hr />
                 <h3 id="kapitel8">Kapitel 8 - Besonderes Markup</h3><br>
                 <h3 id="kapitel9">Kapitel 9 - Flash, Video & Audio</h3><br>
                 <h2>CSS</h2><br>
@@ -133,7 +202,38 @@
                 <h3 id="kapitel1.2">Kapitel 2 - Farbe</h3><br>
                 <h3 id="kapitel1.3">Kapitel 3 - Text</h3><br>
                 <h3 id="kapitel1.4">Kapitel 4 - Kästen</h3><br>
+                <hr />
                 <h3 id="kapitel1.5">Kapitel 5 - Listen, Tabellen & Formulare</h3><br>
+               <p> Mit der Eigenschaft list-style-type lassen sich die Aufz&#xE4;hlungspunkte anpassen z.B.: ABC,abc,123,     ,i.ii.iii,</p>
+
+<!--Platzhalter für Codepen-->
+<p>Mit list-style-image l&#xE4;sst sich ein Bild als aufz&#xE4;hlungspunkt verwenden.</p>
+
+<p>Mit list-style-position l&#xE4;sst sich festlegen ob sich der Aufz&#xE4;hlungspunkt ausserhalb oder innerhalb der TextBox ist.</p>
+
+<!--Platzhalter für Codepen-->
+<p>Das Element list-style kombiniert alle list- Elemente.</p>
+
+<!--Platzhalter für Codepen-->
+<p>Folgendes Beispiel zeigt wie man eine Tabelle formatieren kann.</p>
+
+<!--Platzhalter für Codepen-->
+<p>Mit dem emty-cells Element kann man definieren ob leere Zellen angezeigt werden oder nicht.</p>
+
+<!--Platzhalter für Codepen-->
+<p>Mit dem Element border-spacing kann man den Abstand zu benachbarten Zellen festlegen.</p>
+
+<!--Platzhalter für Codepen-->
+<p>Border-collapse f&#xFC;hrt die R&#xE4;nder aller Zellen zu einheitlichen Trennlinien zusammen und border-seperate separiert die Zellen wieder.</p>
+
+<!--Platzhalter für Codepen-->
+<p>Folgendes Beispiel zeigt wie man ein Formular formatieren kann.</p>
+
+<!--Platzhalter für Codepen-->
+<p>Mit dem cursor Element kann man den Typ Mauszeiger &#xC4;ndern der der Benutzer sieht.</p>
+
+<!--Platzhalter für Codepen-->
+<hr />
                 <h3 id="kapitel1.6">Kapitel 6 - Layout</h3><br>
                 <h3 id="kapitel1.7">Kapitel 7 - Bilder</h3><br>
 
