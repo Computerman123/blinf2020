@@ -389,6 +389,59 @@
 <!--Platzhalter für Codepen-->
 <hr />
                 <h3 id="kapitel1.6">Kapitel 6 - Layout</h3><br>
+                <p>CSS behandelt alle Elemente so, als befänden sie sich jeweils in ihrem eigenen Kasten. Dabei wird zwischen 
+                    den Block- und Inlineelementen unterschiedet. Blockelemente beginnen immer in einer neuen Zeile. 
+                    Dazu gehören z.B. <h1>, <p>, <ul>, <li>. Inline-Elemente ‘schwimmen’ zwischen den umgebenden Elementen; 
+                    Das sind z.B. <img>, <b>, <i>.
+                    <br>
+                    <br>
+                    Ausserdem ist von ‘umfassenden Elementen’ die Rede. Wenn sich ein Blockelement im Anderen befindet, 
+                    wird der äussere Kasten als das Umfassende-, Einschließende- oder Elternelement bezeichnet. 
+                    <br>
+                    <br>
+                    Bei der Positionierung spielen mehrere Verfahren eine wichtige Rolle; der normale Fluss, 
+                    die relative, absolute und feste Position und das schwimmende Element. 
+                    <br>
+                    <br>
+                    Der normale Fluss ist standardmässig aktiviert. Jedes Blockelement kommt auf eine neue Zeile, selbst wenn 
+                    zwei Blockelemente noch Platz nebeneinander haben.
+                    <br>
+                    <br>
+                    Die relative Positionierung ist gut, um Elemente beliebig zu versetzen. Die Positionen der 
+                    Umgebenden Elementen bleiben dabei unverändert.
+                    <br>
+                    <br>
+                    Eine Absolute Positionierung wird gebraucht, wenn das Element immer dableiben soll, 
+                    wo es ist. Dabei werden die umfassenden Elemente nicht beeinflusst.
+                    <br>
+                    <br>
+                    Feste Positionierungen sind den absoluten sehr ähnlich, mit dem Unterschied, dass sie beim Scrollen mitkommen.
+                    <br>
+                    <br>
+                    Die schwimmenden Elemente werden aus dem normalen Fluss herausgenommen und können von den umgebenden
+                    Elementen umflossen werden. Die schwimmenden Elemente werden entweder ganz links oder ganz rechts platziert.
+                    <br>
+                    <br>
+                    Position:static – normaler Fluss<br>
+                    Position:relative – relative Positionierung<br>
+                    Position:absolute – absolute Positionierung<br>
+                    Position:fixed – feste Positionierung<br>
+                    z-index – überlappende Elemente; Bei relativen, festen und absoluten Positionen können sich Elemente überlappen. 
+                    Um nun selbst zu definieren, welches Element zuoberst liegt, wird nun der z-index verwendet. Je höher der Wert 
+                    des z-index, umso höher die Ebene des Elements.<br>
+                    flaot – schwimmende Elemente<br>
+                    clear – schwimmende Elemente freistellen:
+                    <ul>
+                        <li>left – linke Kante darf nichts berühren</li>
+                        <li>right – rechte Kante darf nichts berühren</li>
+                        <li>both – linke und rechte Kante darf nichts berühren</li>
+                        <li>none – die Elemente dürfen einander berühren</li>
+                    </ul>
+                    <br>
+                    Stylesheets:
+                    Mit @import können andere Regeln importiert werden. Mit link werden die einzelnen Stylesheets mit dem HTML-Code verlinkt.
+                    </p>
+                    <hr />
                 <h3 id="kapitel1.7">Kapitel 7 - Bilder</h3><br>
                 <p>Um die Grösse von einem Bild zu ändern, verwendet man folgende Eigenschaften, height und width.<br />
                     Falls man ein Bild zentrieren will, muss man display: block; und margin: 0px auto; machen.</p>
