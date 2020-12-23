@@ -49,6 +49,7 @@
             </div>
         </nav>
     </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">🔼</button>
     <h2 class="text-center text-muted mt-3 mb-4">Lerndoku vom Modul 101-Webauftritt gestalten und realisieren</h2>
     <br/>
 
@@ -627,6 +628,25 @@ Mit einem &#x3C;table&#x3E;-Element kann man eine Tabelle erstellen welche man d
             progress.style.height = progressHeight + "%";
         }
     </script>
+    <script>
+
+        var mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 
 </html>
