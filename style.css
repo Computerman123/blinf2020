@@ -220,6 +220,10 @@ footer a {
     width: 15%;
 }
 
+#themebilder {
+    float: right;
+}
+
 .blah {
     width: 130%;
     padding-left: 0px;
