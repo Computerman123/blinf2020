@@ -248,14 +248,18 @@
                     </p>
                 <p>Wenn jetzt an einer bestimmten Stelle im Code nun ein dynamischer Inhalt eingefügt werden soll, kann an genau dieser Stelle ein PHP-Skript eingefügt werden. Je nach gewünschtem Inhalt gibt es auch entsprechende Funktionen. Im Anschluss werden die meistgebrauchten Funktionen kurz aufgeführt und erklärt:</p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>&#x3C;?php the_title(); ?&#x3E; : Fügt an dieser Stelle den dynamischen Seitentitel ein</li>
+                    <li>&#x3C;?php the_content(); ?&#x3E; : Fügt an dieser Stelle den dynamischen Seiteninhalt ein</li>
+                    <li>&#x3C;?php get_header(); ?&#x3E; : Verknüpft das Index.php File mit dem header.php File</li>
+                    <li>&#x3C;?php get_footer(); ?&#x3E; : Verknüpft das Index.php File mit dem footer.php File</li>
+                    <li>&#x3C;?php bloginfo(‘url’); ?&#x3E; : Zeigt die unter "Einstellungen"> "Allgemein" festgelegte "Site-Adresse (URL)" an.</li>
+                    <li>&#x3C;?php bloginfo(‘template_url’); ?&#x3E; : URL des Verzeichnisses für das Entsprechende Element</li>
+                    <li>&#x3C;?php bloginfo(‘name’); ?&#x3E; : Zeigt den unter "Einstellungen"> "Allgemein" festgelegten "Site-Titel" an.</li>
+                    <li>&#x3C;?php wp_head(); ?&#x3E; : Kennzeichnet das entsprechende File als Header</li>
+                    <li>&#x3C;?php wp_footer(); ?&#x3E; : Kennzeichnet das entsprechende File als Footer</li>
+                    <li>&#x3C;?php wp_nav_menu ($menu_settings) ; ?&#x3E; Variable deklarieren für dynamisches Menü</li>
+                    <li>&#x3C;?php register_nav_menu(‘primary’,’Hauptnavigation’); ?&#x3E; : Dynamischem Menü Namen vergeben</li>
+                    <li>&#x3C;?php $menu_settings = array(); ?&#x3E; Deklarierte Variable definieren</li>
                 </ul>
                 
              </div>
