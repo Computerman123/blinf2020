@@ -239,6 +239,14 @@
                 <p>Der oberste Teil kann rauskopiert und in das eigene style.css eingefügt werden. Dabei ist nur der abgebildete Bereich notwendig. Die eigenen Informationen können eingetragen werden. Diese werden dann bei dem eigenen Theme angezeigt.</p>
 
                 <h4>Wordpress Theme einrichten</h4>
+                <p>Das Theme ist erstellt und einsatzbereit. Mehr oder weniger zumindest, denn es fehlt noch alles Mögliche an Inhalt, Header und Footer. </p>
+                <img src="bilder/289/files.png" alt=".php Files" id="themebilder">
+                <p>Bei der Arbeit mit Wordpress ist es empfehlenswert, für den Header und den Footer ein jeweils eigenes File zu erstellen. Dies hat den einfachen Grund, dass Header und Footer, vor allem der Footer, eigentlich immer gleich bleiben. Ausserdem ist es übersichtlicher, da nicht alles in ein einziges File gecoded ist.</p>
+                <img src="bilder/289/index.png" alt=".php Files" id="themebilder">
+                <p>In das File header.php kommt der gesamte obere Teil des HTML Gerüstes, also alles von &#x3C;!doctype html&#x3E; bis und mit &#x3C;/header&#x3E;. In das File footer.php kommt der gesamte untere Teil, von &#x3C;/main&#x3E; bis und mit &#x3C;/html&#x3E;, bis sich im File index.php nichts Weiteres als abgebildet befindet.</p>
+                <p>Der vorhergehenden Grafik sind schon die nötigen Massnahmen zu entnehmen, die es benötigt, um es wieder zu ‘einem einzigen, grossen’ zu machen. An dieser Stelle kommt die Skriptsprache PHP ins Spiel. An der Stelle, an der sich normalerweise der Header oder der Footer befinden würden, werden nun die entsprechenden PHP-Befehle eingefügt; &#x3C;?php get_header(); ?&#x3E; oder entsprechend &#x3C;?php get_footer(); ?&#x3E;.
+                    Damit der Browser auch erkennt, welches File was ist, werden die betroffenen Files entsprechend mit &#x3C;?php wp_head ?&#x3E; oder &#x3C;?php wp_footer ?&#x3E; gekennzeichnet.
+                </p>
 
                 <h4>PHP</h4>
                 <p>Das Einsetzen von PHP ist beim Arbeiten mit CMS unumgänglich, vor allem wenn es eine dynamische Seite sein sollte. Mittels PHP können Inhalte jederzeit im Backend von Wordpress verändert, gelöscht oder hinzugefügt werden. </p>
