@@ -230,11 +230,14 @@
                 <h3 id="themes">Themes (PHP)</h3><br>
                 <h4>Wordpress Theme erstelles</h4>
                 <img src="bilder/289/themes.png" alt="Wordpress Themes" id="themebilder">
-                <p>Wordpress stellt unter anderem sogenannte Themes zur Verfügung. Diese sind im Backend unter dem Menüpunkt ‘Designs’ >> ‘Themes’ zu finden und die Dateien dazu im Wordpress Ordner ‘wp-content’ >> ‘themes’. Wenn man ein eigenes Theme erstellen möchte, kann man also einfach einen neuen Order im Ordner ‘themes’ anlegen.</p>
+                <p>Wordpress stellt unter anderem sogenannte Themes zur Verfügung. Diese sind im Backend unter dem Menüpunkt ‘Designs’ &#x3E;&#x3E; ‘Themes’ zu finden und die Dateien dazu im Wordpress Ordner ‘wp-content’ &#x3E;&#x3E; ‘themes’. Wenn man ein eigenes Theme erstellen möchte, kann man also einfach einen neuen Order im Ordner ‘themes’ anlegen.</p>
+                <br />
                 <img src="bilder/289/besch.theme.png" alt="Wordpress beschädigte Themes" id="themebilder">
                 <p>Auf den zweiten Blick ist es aber doch nicht ganz so einfach. Es wird sogar eine Fehlermeldung ausgegeben, die besagt, dass ein Stylesheet fehlt. Tatsächlich fehlt mehr als nur das Stylesheet, das kann man ganz leicht erkennen, in dem man einen anderen Themeordner öffnet, deshalb werden im Ordner des neuen Themes zunächst einmal folgende Files erstellt: style.css und index.php.</p>
+                <br />
                 <img src="bilder/289/funktiosf.theme.png" alt="Wordpress funktionsfähiges Theme" id="themebilder">
                 <p>Das Ganze sollte nun so aussehen. Klickt man jedoch auf ein anderes Theme, werden Details aufgeführt, was beim neu erstellten Theme nicht der Fall ist. Wenn man nun die CSS files der vorgefertigten Themes öffnet, sind im oberen Teil viele Kommentare zu finden. </p>
+                <br />
                 <img src="bilder/289/code.png" alt="Themendetails" id="themebilder">
                 <p>Der oberste Teil kann rauskopiert und in das eigene style.css eingefügt werden. Dabei ist nur der abgebildete Bereich notwendig. Die eigenen Informationen können eingetragen werden. Diese werden dann bei dem eigenen Theme angezeigt.</p>
 
@@ -242,8 +245,10 @@
                 <p>Das Theme ist erstellt und einsatzbereit. Mehr oder weniger zumindest, denn es fehlt noch alles Mögliche an Inhalt, Header und Footer. </p>
                 <img src="bilder/289/files.png" alt=".php Files" id="themebilder">
                 <p>Bei der Arbeit mit Wordpress ist es empfehlenswert, für den Header und den Footer ein jeweils eigenes File zu erstellen. Dies hat den einfachen Grund, dass Header und Footer, vor allem der Footer, eigentlich immer gleich bleiben. Ausserdem ist es übersichtlicher, da nicht alles in ein einziges File gecoded ist.</p>
+                <br />
                 <img src="bilder/289/index.png" alt=".php Files" id="themebilder">
                 <p>In das File header.php kommt der gesamte obere Teil des HTML Gerüstes, also alles von &#x3C;!doctype html&#x3E; bis und mit &#x3C;/header&#x3E;. In das File footer.php kommt der gesamte untere Teil, von &#x3C;/main&#x3E; bis und mit &#x3C;/html&#x3E;, bis sich im File index.php nichts Weiteres als abgebildet befindet.</p>
+                <br />
                 <p>Der vorhergehenden Grafik sind schon die nötigen Massnahmen zu entnehmen, die es benötigt, um es wieder zu ‘einem einzigen, grossen’ zu machen. An dieser Stelle kommt die Skriptsprache PHP ins Spiel. An der Stelle, an der sich normalerweise der Header oder der Footer befinden würden, werden nun die entsprechenden PHP-Befehle eingefügt; &#x3C;?php get_header(); ?&#x3E; oder entsprechend &#x3C;?php get_footer(); ?&#x3E;.
                     Damit der Browser auch erkennt, welches File was ist, werden die betroffenen Files entsprechend mit &#x3C;?php wp_head ?&#x3E; oder &#x3C;?php wp_footer ?&#x3E; gekennzeichnet.
                 </p>
