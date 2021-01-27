@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 header {
     background-color: rgb(49, 124, 204);
     flex-grow: 1;
@@ -7,6 +11,7 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 body>main>div>div#news {
@@ -159,7 +164,7 @@ div#footer {
     background-color: rgb(49, 124, 204);
     padding: 20px;
     margin-top: 20px;
-    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 div#footer p#rechts {
@@ -224,6 +229,7 @@ footer a {
     float: left;
     width: 25%;
 }
+
 #schriftmen {
     font-size: 1rem;
 }
@@ -232,121 +238,106 @@ footer a {
     width: 130%;
     padding-left: 0px;
 }
- body {
-   margin: 0;
-   padding: 0;
- }
- 
- #menuToggle {
-   display: block;
-   position: fixed;
-   margin-top: 220px;
-   top: 50px;
-   left: 50px;
-   
-   z-index: 1;
-   
-   -webkit-user-select: none;
-   user-select: none;
- }
- 
- #menuToggle a {
-   text-decoration: none;
-   color: white;
-   
-   transition: color 0.3s ease;
- }
 
- 
- #menuToggle a:hover {
-   color: #cdcdcd;
- }
- 
- 
- #menuToggle input {
-   display: block;
-   width: 40px;
-   height: 32px;
-   position: absolute;
-   top: -7px;
-   left: -5px;
-   
-   cursor: pointer;
-   
-   opacity: 0;
-   z-index: 2;
-   
-   -webkit-touch-callout: none;
- }
- 
- #menuToggle span {
-   display: block;
-   width: 33px;
-   height: 4px;
-   margin-bottom: 5px;
-   position: relative;
-   
-   background-color: #cdcdcd;
-   border-radius: 3px;
-   
-   z-index: 1;
-   
-   transform-origin: 4px 0px;
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               opacity 0.55s ease;
- }
- 
- #menuToggle span:first-child {
-   transform-origin: 0% 0%;
- }
- 
- #menuToggle span:nth-last-child(2) {
-   transform-origin: 0% 100%;
- }
- 
- #menuToggle input:checked ~ span {
-   opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
- }
- 
- #menuToggle input:checked ~ span:nth-last-child(3) {
-   opacity: 0;
-   transform: rotate(0deg) scale(0.2, 0.2);
- }
- 
- #menuToggle input:checked ~ span:nth-last-child(2) {
-   transform: rotate(-45deg) translate(0, -1px);
- }
- 
- #menu {
-   position: absolute;
-   width: 300px;
-   margin: -100px 0 0 -50px;
-   padding: 50px;
-   padding-top: 125px;
-   
-   background: rgb(49, 124, 204);
-   list-style-type: none;
-   -webkit-font-smoothing: antialiased;
-   
-   transform-origin: 0% 0%;
-   transform: translate(-100%, 0);
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
- }
- 
- #menu li {
-   padding: 4px 0;
-   font-size: 15px;
- }
- 
- #menuToggle input:checked ~ ul {
-   transform: none;
- }
- #myBtn {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#menuToggle {
+    display: block;
+    position: fixed;
+    margin-top: 220px;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: #cdcdcd;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: rgb(49, 124, 204);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 4px 0;
+    font-size: 15px;
+}
+
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+#myBtn {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -359,13 +350,14 @@ footer a {
     outline: none;
     padding: 15px;
     border-radius: 4px;
-  }
-  
+}
+
 #myBtn:hover {
     cursor: pointer;
     transition: 0.5s;
     font-size: 60px;
 }
+
 .blah img {
     max-width: 100%;
     max-height: auto;
