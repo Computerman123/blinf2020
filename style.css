@@ -4,7 +4,7 @@ html {
 
 header {
     background-color: rgb(49, 124, 204);
-    flex-grow: 1;
+    flex-grow: 0;
 }
 
 body {
@@ -89,6 +89,10 @@ body>header>nav>div>ul>li:hover {
 
 main {
     flex-grow: 2;
+}
+
+div.container.text-muted {
+    flex-grow: 1;
 }
 
 #scrollPath {
