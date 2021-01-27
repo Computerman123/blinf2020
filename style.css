@@ -348,12 +348,7 @@ body {
     background-color: transparent;
     border: none;
     outline: none;
-<<<<<<< HEAD
-    padding: 15px;
-    border-radius: 4px;
-=======
     padding-right: 40px;
->>>>>>> 70564090d2fe6455685e1e166e81878c71d90874
 }
 
 #myBtn:hover {
