@@ -66,32 +66,32 @@
             <span></span>
 
             <ul id="menu">
-                <a href="#designregeln">
-                    <li>Design Regeln</li>
+                <a href="#tbl">
+                    <li>Tabelle</li>
                 </a>
-                <a href="#adobexd">
-                    <li>Adobe XD</li>
+                <a href="#datenatz">
+                    <li>Datensatz</li>
                 </a>
-                <a href="#entwicklung">
-                    <li>Entwicklungsumgebung</li>
+                <a href="#attribut">
+                    <li>Attribut</li>
                 </a>
-                <a href="#wp">
-                    <li>Wordpress</li>
+                <a href="#loginsbenutzer">
+                    <li>Logins und Benutzer erstellen</li>
                 </a>
-                <a href="#installation">
-                    <li>Installation</li>
+                <a href="#einträgelöschen">
+                    <li>Spezifische Einträge löschen</li>
                 </a>
-                <a href="#themes">
-                    <li>Themes (PHP)</li>
+                <a href="#transaktionen">
+                    <li>Transaktionen</li>
                 </a>
-                <a href="#benutzer">
-                    <li>Benutzer</li>
+                <a href="#tabelleausfüllen">
+                    <li>Tabelle ausfüllen aus einer anderen Tabelle</li>
                 </a>
-                <a href="#content">
-                    <li>Content (Seiten/Beiträge/Editor)</li>
+                <a href="#csvdatei">
+                    <li>Tabelle aus CSV-Datei importieren</li>
                 </a>
-                <a href="#wpmenu">
-                    <li>Menüs</li>
+                <a href="#datenbanktabelleanalysieren">
+                    <li>Datenbank und Tabelle analysieren</li>
                 </a>
                 <a href="#plugins">
                     <li>Plugins</li>
@@ -129,126 +129,92 @@
     <div class="container blah">
         <div class="row">
             <div class="col-3">
-                <!--bild hier-->
+                <img src="bilder/105/create_table.png" alt="Tabelle erstellen" />
             </div>
             <div class="col-9">
-                <h2 id="designregeln">Design Regeln</h2><br>
-                <h4>Layout Elemente</h4>
-                <ul>
-                    <li>Typografie = serifenlos</li>
-                    <li>Farben = stimmig</li>
-                    <li>Bilder/Videos = sinnvoll und emotional</li>
-                    <li>Flächen = Unterteilung/Ordnung</li>
-                    <li>Formularelemente = selbsterklärend</li>
-                </ul>
+                <h2 id="tbl">Tabelle</h2><br>
+                <p>Zuerst erstellt man eine Tabelle mit dem Namen. Danach werden die Felder erstellt mit dem Namen und dem Datentyp. Hier sieht man den Befehl IDENTITY(1,1), das bedeutet, dass es eine automatische Aufzählung gibt. Wenn das Feld ein Primary Key sein soll, muss man das noch hinschreiben. Falls es ein Foreign Key ist, muss man ebenfalls hinschreiben, dass es noch ein Foreign Key ist. Zudem muss man noch sagen, wo der Primary Key ist, also von wo er die Daten beziehen soll.</p>
+            </div>
+        </div>
 
-                <h4>C.R.A.P.</h4>
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-9">
+                <h2 id="datensatz">Datensatz</h2><br>
+                <p>Ein Datensatz ist ein Eintrag in einer Tabelle.</p><p>In Excel wäre das eine Zeile. Um einen Datensatz zu löschen, gibt es den Befehl DELETE. Dieser Befehl wird nur bei Datensätzen verwendet, sonst wird immer DROP verwendet.</p>
+            </div>
+        </div>
 
-                <dl>
-                    <dt>Contrast:Kontrast</dt>
-                    <dd>Gewisse Elemente sollen herausstechen</dd>
-                    <dt>Repetition:Wiederholung</dt>
-                    <dd>Hilft dem Benutzer sich zurecht zu finden und sorgt für einen Wiedererkennungseffekt</dd>
-                    <dt>Alignment:Anordnung</dt>
-                    <dd>Elemente welche dicht beieinanderstehen werden als zusammengehörig empfunden, bezieht sich auf alle Elemente</dd>
-                    <dt>Proximity:Nähe</dt>
-                    <dd>Ähnliche/Zusammengehörende Texte/Bilder werden nahe aneinander platziert, um zu zeigen, dass sie zusammengehören
-                    </dd>
-                </dl>
+        <div class="row">
+            <div class="col-3">
+                <img src="bilder/105/alter_table.png" alt="ALTER" />
+            </div>
+            <div class="col-9">
+                <h2 id="attribut">Attribut</h2><br>
+                <p>Ein Attribut ist wie der Spaltenname. Um ein Attribut zu löschen oder hinzufügen, gibt es folgendene Befehl: DROP und ADD</p><br />
+                <p>Mit ALTER TABLE tblPerson, wird gesagt, welche Tabelle bearbeitet wird und danach mit COLUMN welche Spalte. Hier wird jetzt zuerst eine Spalte gelöscht und danach eine neue hinzugefügt.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/289/ebenen.png" alt="journey_start_thumbnail" />
+                <img src="bilder/105/login_benutzer.png" alt="Logins und Benutzer erstellen" />
+                <img src="bilder/105/tabelle_berechtigungen.png" alt="Tabelle der Berechtigungen" />
             </div>
             <div class="col-9">
-                <h2 id="adobexd">Adobe XD</h2><br>
-                <h4>Ebenen, Assets und Plugins</h4>
-                <p>Ganz links kann man zwischen Assets, Ebenen und Plugins auswählen. Plugins kann man über die Integrierte Suche in XD suchen.</br>
-                    Dokument-Assets ist eine Sehr hilfreiche Funktion um Wiederkommende Elemente zu speichern. Um etwas hinzuzufügen muss man es markieren und dann auf das Kleine + klicken.</br>
-                    Im Ebenen Tab kann man Formen und Gruppen sortieren, umbenennen und verwalten. </p>
+                <h2 id="loginbenutzer">Logins und Benutzer erstellen</h2><br>
+                <p>In SQL wird zwischen Login und Benutzer unterschieden. Allein bringt keines der beiden etwas aber zusammen ergeben sie eine Möglichkeit sich anzumelden und Tabellen zu bearbeiten. Aber bevor man Tabellen bearbeiten kann, muss man dem Benutzer Rechte zuweisen. Dies macht man mit GRANT oder REVOKE. Genaue Syntax im Screenshot.</p><br />
+                <p>Die GRANT Syntax mit ON tblPerson gilt nur auf der Tabelle tblPerson. Also wird mit ON eine Berechtigung vergeben, die nur auf einer spezifischen Tabelle gültig ist.</p>         
             </div>
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/289/tools.png" alt="Tools" />
+                <img src="bilder/105/delete_from.png" alt="Einträge löschen" />
             </div>
             <div class="col-9">
-                <h4>Tools und Prototyping</h4>
-                <p>Die Tools von Oben nach unten sind Auswahl, Rechteck, Ellipse, Polygon, Linie, Zeichenstift, Text, Zeichenfläche und Zoom.</br>
-                    Im Bearbeitungsstab gibt es verschiedene Möglichkeiten, um eine Form zu bearbeiten.</br>
-                    Im Prototype Tab kann man Formen mit einander verlinken um eine nutzbare Version des Screendesign zu erstellen. </p>
+                <h2 id="einträgelöschen">Spezifische Einträge löschen</h2><br>
+                <p>Mit dem Befehl folgenden Befehl könne Einträge spezifisch gelöscht werden: DELETE FROM tblname WHERE Kategorie = Wert</p>
             </div>
         </div>
         <div class="row">
             <div class="col-3">
-                <!--bild hier-->
+                <img src="bilder/105/transaktion.png" alt="Transaktion" />
             </div>
             <div class="col-9">
-                <h2 id="entwicklung">Entwicklungsumgebung</h2><br>
-                <p>Bei der Entwicklungsumgebung gibt es nicht viel Spezielles oder je nach Benutzer Unterschiedliches.
-                </p>
-                <p>Man braucht:</p>
-                <ul>
-                    <li>Einen Code-Editor</li>
-                    <li>Verschiedene Browser</li>
-                    <li>Xampp (für Localhost)</li>
-                    <li>FileZilla</li>
-                </ul>
-                <h4>Code Editor:</h4>
-                <p>Für das Bearbeiten von PHP / CSS, damit die Website gut aussieht und funktioniert. Wir haben immer Visual Studio Code von Microsoft benutzt. Es funktioniert sehr simpel.</p>
-                <h4>Verschiedene Browser:</h4>
-                <p>Weil jeder Browser Dinge anders darstellt, braucht man verschiedene Browser, damit man das optimale Ergebnis für jeden Browser erreicht.</p>
-                <h4>Xampp:</h4>
-                <p>Mit Apache und MYSQL, damit man nicht immer auf den Webhoster hochladen muss.</p>
-                <h4>FileZilla</h4>
-                <p>Hilfsprogramm, das per FTP-Verbindung die Dateien auf das Webhosting hochlädt.</p>
+                <h2 id="transaktionen">Transaktionen</h2><br>
+                <p>Mit Transaktionen kann man wie eine Testumgebung erstellen und auf einen Save Point zurückgehen, wenn man einen Fehler gemacht hat.</p> <br />
+                <p>Mit BEGIN TRAN startet man die Transaktion wie man im Bild sieht. Man erstellt einen Save Point mit SAVE TRAN (Name). Dann kann man mit dem Testen anfangen. Wenn alles gut geht und man nicht zurück muss, macht man einfach COMMIT und alles wird bestätigt und die Transaktion wird gelöscht. Wenn man aber einen Fehler gemacht hat, kann man einfach mit ROLLBACK TRAN (Name) auf den Stand vom Save Point zurück und alles ist wieder wie es war als man den Save Point erstellt hat.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-3">
-                <!--bild hier-->
+                <img src="bilder/105/insert_into.png" alt="Tabelle ausfüllen" />
             </div>
             <div class="col-9">
-                <h2 id="wp">Wordpress</h2><br>
+                <h2 id="tabelleausfüllen">Tabelle ausfüllen aus einer anderen Tabelle</h2><br>
+                <p>Um den Inhalt von einer anderen Tabelle einzufügen, gibt es folgenden Befehl: INSERT INTO tblname (Feld1, Feld2)</p>
+                <p>Mit dem Befehl SELCET bestimmt man welcher Inhalt von welcher Tabelle eingefügt werden soll und mit WHERE kann man alles noch spezifischer machen. Hier ein Beispiel.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/289/datenbank_phpmyadmin.png" alt="Datenbank" />
+                <img src="bilder/105/import_csv.png" alt="CSV-Datei importieren" />
             </div>
             <div class="col-9">
-                <h3 id="installation">Installation</h3><br>
-                <p>Bevor die richtige Installation beginnt müssen die WordPress-Files von wordpress.org heruntergeladen werden und in den entsprechenden Website-Ordner, in welchem WordPress installiert werden sollte eingefügt werden. Auf localhost unter
-                    phpmyadmin muss nun eine Datenbank erstellt werden.</p>
+                <h2 id="csvdatei">Tabelle aus CSV-Datei importieren</h2><br>
+                <p>Aus einer externen CSV-Datei importiert man mit einem BULK INSERT. Die Syntax sieht wie folgt aus:</p>
             </div>
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/289/wordpress_datenbank.png" alt="Wordpress Datenbank" />
+                <img src="bilder/105/analyse_1.png" alt="Analyse">
+                <img src="bilder/105/analyse_2.png" alt="Analyse">
             </div>
             <div class="col-9">
-                <p>Navigiert man nun über localhost auf den Ordner, in welchem WordPress installiert werden soll, beginnt die Installation. Klick auf den Installations-Button und fülle im nächsten Schritt die Datenbank-Angaben aus. Als Datenbankname verwendest
-                    du denselben wie bei phpmyadmin. Der Standard Benutzername ist root und das Passwort leer. Den Tabellen-Präfix sollte man ändern, aus Sicherheitsgründen.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">
-                <img src="bilder/289/wordpress-user_erstellt.png" alt="User erstellen" />
-            </div>
-            <div class="col-9">
-                <p>Im nächsten Schritt erstellst du deinen eigenen WordPress Benutzer/Admin. Das Passwort sollte gut gewählt sein und merk dir die Anmeldedaten gut. Zu Beginn macht es Sinn einen Haken beim Punkt der Suchmaschine zu setzen.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">
-                <img src="bilder/289/themes.png" alt="Wordpress Themes">
-            </div>
-            <div class="col-9">
-                <h3 id="themes">Themes (PHP)</h3><br>
-                <h4>Wordpress Theme erstelles</h4>
-                <p>Wordpress stellt unter anderem sogenannte Themes zur Verfügung. Diese sind im Backend unter dem Menüpunkt ‘Designs’ &#x3E;&#x3E; ‘Themes’ zu finden und die Dateien dazu im Wordpress Ordner ‘wp-content’ &#x3E;&#x3E; ‘themes’. Wenn man ein
-                    eigenes Theme erstellen möchte, kann man also einfach einen neuen Order im Ordner ‘themes’ anlegen.</p>
+                <h2 id="datenbanktabelleanalysieren">Datenbank und Tabelle analysieren</h2><br>
+                <p>Mit dem folgenden Befehl kann man herausfinden, welche Tabellen sich in der Datenbank befinden:</p> <br />
+                <p>Mit diesem Befehl sieht man genaue Informationen über den Inhalt der Tabelle.</p><br />
+                <p>Bei SELECT wird gesagt, was für Informationen angezeigt werden sollen. FROM von wo, das kann man immer so lassen. WHERE kann man dann sagen von welcher Tabelle die Informationen kommen sollen.</p>
             </div>
         </div>
 
@@ -257,8 +223,9 @@
                 <img src="bilder/289/besch.theme.png" alt="Wordpress beschädigte Themes">
             </div>
             <div class="col-9">
-                <p>Auf den zweiten Blick ist es aber doch nicht ganz so einfach. Es wird sogar eine Fehlermeldung ausgegeben, die besagt, dass ein Stylesheet fehlt. Tatsächlich fehlt mehr als nur das Stylesheet, das kann man ganz leicht erkennen, in dem
-                    man einen anderen Themeordner öffnet, deshalb werden im Ordner des neuen Themes zunächst einmal folgende Files erstellt: style.css und index.php.</p>
+                <h2 id="sprachschichten">SQL-Sprachschichten</h2><br>
+                <p>DDL, DCL, DQL und DML sind die Sprachschichten die SQL hat.</p>
+                <p>Grundsätzlich sind das vier Kategorien in welche einfach alle Befehle unterteilt worden sind.</p>
             </div>
         </div>
         <div class="row">
@@ -280,7 +247,6 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <!--AAAAAAAAAAAAAAAAAAARRRRGGGGHH-->
             </div>
             <div class="col-9">
                 <h4>Wordpress Theme einrichten</h4>
@@ -307,7 +273,6 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <!--WARRRRUUUMMM-->
             </div>
             <div class="col-9">
                 <p>Der vorhergehenden Grafik sind schon die nötigen Massnahmen zu entnehmen, die es benötigt, um es wieder zu ‘einem einzigen, grossen’ zu machen. An dieser Stelle kommt die Skriptsprache PHP ins Spiel. An der Stelle, an der sich normalerweise
@@ -318,7 +283,6 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <!--AAaaaaaaaa..-->
             </div>
             <div class="col-9">
                 <h4>PHP</h4>
