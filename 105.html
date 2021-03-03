@@ -137,29 +137,29 @@
 
     <div class="container blah">
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
                 <img src="bilder/105/dbicon.PNG" alt="Symbol für Datenbanken">
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="tbl">Datenbank</h2><br>
                 <p>Eine Datenbank ist eine Ansammlung mehrerer Tabellen mit Daten Sätzen die miteinander verknüpft sein können. Datenbanken stehen hinter so gut wie allen Webseiten und Social-media Plattformen.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
                 <!--Platzhalter für Bild-->
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="tbl">DBMS</h2><br>
                 <p>DBMS(Database Management System) sind Wege für System Administratoren oder Benutzer mit einer Datenbank zu interagieren. Meistens wird dies mit Hilfe eines Grafischen Interfaces oder CLI gemacht. Folgendes sind bekannte DBMS: Oracle, MySQL,
                     Microsoft SQL Server. Ein DBMS beinhaltet auch Sicherheitsvorkehrungen wie ein Nutzer System bei dem man Berechtigungen festlegen kann.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
                 <!--Platzhalter für Bild-->
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="tbl">SQL Server installieren</h2><br>
                 <p>Ein Microsoft SQL Server installiert man indem sich die Installationsdatei herunterladet und ausführt. Dann wählt man New SQL Server und wählt die Lizenz die man möchte und akzeptiert dann die Vereinbarungen. Danach ist es empfohlen ‘Use
                     Microsoft Update to check for updates’ auszuwählen um den SQL Server aktuell zu halten. Bei der Auswahl der Eigenschaften (Features) alle Häkchen unterhalb Databases Engine Services entfernen. Dann kann man die Instanz benennen. Bei
@@ -169,19 +169,19 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
                 <img src="bilder/105/datemodellieren.PNG" alt="Tabele die zeigt wie man Daten Modelliert">
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="tbl">Daten modellieren</h2><br>
                 <p>Ein Datenmodell besteht aus zwei Teilen, und zwar dem Beziehungsdiagramm welches aufzeigt zwischen den Tabellen und der Tabellen-Definitionen welche besagen in welcher Tabelle es welche Attribute hat und welche Datentypen verwendet werden
                     sollen. Es sollte auch darin aufgezeigt werden ob es sich um einen Primary Key oder Foreign Key handelt. Ebenfalls sollte ersichtlich sein ob der Wert NULL sein darf oder nicht.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="PKundFK">Der Primär- und Fremdschlüssel</h2><br>
                 <p><strong>Der Primärschlüssel</strong></p>
                 <p>Der Primärschlüssel kommt in relationalen Datenbanken zum Einsatz und wird zur eindeutigen Identifizierung eines Datensatzes verwendet. In einer normalisierten Datenbank besitzen alle Tabellen einen Primärschlüssel. Der Wert eines Primärschlüssels
@@ -195,10 +195,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
                 <img src="bilder/105/normalform1.png" alt="Normalform 1"> <img src="bilder/105/normalform2.png" alt="Normalform 2"> <img src="bilder/105/normalform3.png" alt="Normalform 3">
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="datennorm">Daten Normalisieren</h2><br>
                 <p>In einer Datenbank darf in einem Feld genau eine einzige Information dargestellt werden, das heisst, dass eine Datensatz aus nur einer einzigen Zeile bestehen darf. Deshalb muss man Daten, die zum Beispiel in einer Excel-Tabelle festgehalten
                     sind, zuerst normalisiert werden. Die Normalisierung wird in drei Schritte aufgeilt; <br> - Die 1. Normalform<br> - Die 2. Normalform<br> - Die 3. Normalform<br>
@@ -212,9 +212,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="datentypen">Datentypen</h2><br>
                 <p>In Datenbanken gibt es immer mehrere Felder in einer Tabelle, und diese Felder haben in den meisten Fällen verschiedene Inhalte. Je nach Inhalt ist ein bestimmter Datentyp besser geeignet als der andere. <br> - Bit: Geeignet für Felder
                     mit Ja/nein, wahr/falsch. Ähnlich dem Bolean, der von SQL aber nicht gekannt wird. <br><br> - Decimal, Numeric: Datentypen für Felder mit Kommazahlen <br> - Tinyint: Datentyp für Felder mit einem Wert, der kleiner als 255 ist. Dieser
@@ -228,7 +228,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-3 tcode">
+            <div class="col-md-3 tcode">
                 <font face="Courier New" size="2">
                     <font color="blue">CREATE</font>&nbsp;
                     <font color="blue">TABLE</font>&nbsp;
@@ -272,7 +272,7 @@
                 </font>
 
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="tbl">Tabelle</h2><br>
                 <p>Zuerst erstellt man eine Tabelle mit dem Namen. Danach werden die Felder erstellt mit dem Namen und dem Datentyp. Hier sieht man den Befehl IDENTITY(1,1), das bedeutet, dass es eine automatische Aufzählung gibt. Wenn das Feld ein Primary
                     Key sein soll, muss man das noch hinschreiben. Falls es ein Foreign Key ist, muss man ebenfalls hinschreiben, dass es noch ein Foreign Key ist. Zudem muss man noch sagen, wo der Primary Key ist, also von wo er die Daten beziehen soll.</p>
@@ -280,9 +280,9 @@
         </div>
 
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="datensatz">Datensatz</h2><br>
                 <p>Ein Datensatz ist ein Eintrag in einer Tabelle.</p>
                 <p>In Excel wäre das eine Zeile. Um einen Datensatz zu löschen, gibt es den Befehl DELETE. Dieser Befehl wird nur bei Datensätzen verwendet, sonst wird immer DROP verwendet.</p>
@@ -290,7 +290,7 @@
         </div>
 
         <div class="row">
-            <div class="col-3 tcode">
+            <div class="col-md-3 tcode">
                 <font face="Courier New" size="2">
                     <font color="blue">ALTER</font>&nbsp;
                     <font color="blue">TABLE</font>&nbsp;
@@ -320,14 +320,14 @@
                 </font>
 
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="attribut">Attribut</h2><br>
                 <p>Ein Attribut ist wie der Spaltenname. Um ein Attribut zu löschen oder hinzufügen, gibt es folgendene Befehl: DROP und ADD</p><br />
                 <p>Mit ALTER TABLE tblPerson, wird gesagt, welche Tabelle bearbeitet wird und danach mit COLUMN welche Spalte. Hier wird jetzt zuerst eine Spalte gelöscht und danach eine neue hinzugefügt.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3 tcode">
+            <div class="col-md-3 tcode">
                 <font face="Courier New" size="2">
                     <font color="green"><i>&#45;&#45;&nbsp;Login&nbsp;erstellen</i></font>
                     <br/>
@@ -399,7 +399,7 @@
                     <font color="red">'Hans'</font>
                 </font>
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="loginbenutzer">Logins und Benutzer erstellen</h2><br>
                 <p>In SQL wird zwischen Login und Benutzer unterschieden. Allein bringt keines der beiden etwas aber zusammen ergeben sie eine Möglichkeit sich anzumelden und Tabellen zu bearbeiten. Aber bevor man Tabellen bearbeiten kann, muss man dem Benutzer
                     Rechte zuweisen. Dies macht man mit GRANT oder REVOKE. Genaue Syntax im Screenshot.</p><br />
@@ -407,7 +407,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-3 tcode">
+            <div class="col-md-3 tcode">
                 <font face="Courier New" size="2">
                     <font color="green"><i>&#45;&#45;&nbsp;Löscht&nbsp;alle&nbsp;mit&nbsp;PLZ&nbsp;8212</i></font>
                     <br/>
@@ -435,13 +435,13 @@
                     <font color="maroon">tblperson</font>&nbsp;
                 </font>
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="einträgelöschen">Spezifische Einträge löschen</h2><br>
                 <p>Mit dem Befehl folgenden Befehl könne Einträge spezifisch gelöscht werden: DELETE FROM tblname WHERE Kategorie = Wert</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3 tcode">
+            <div class="col-md-3 tcode">
                 <font face="Courier New" size="2">
                     <font color="green"><i>&#45;&#45;&nbsp;Transaktion&nbsp;starten</i></font>
                     <br/>
@@ -468,7 +468,7 @@
                     <font color="blue">COMMIT</font>&nbsp;
                 </font>
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="transaktionen">Transaktionen</h2><br>
                 <p>Mit Transaktionen kann man wie eine Testumgebung erstellen und auf einen Save Point zurückgehen, wenn man einen Fehler gemacht hat.</p> <br />
                 <p>Mit BEGIN TRAN startet man die Transaktion wie man im Bild sieht. Man erstellt einen Save Point mit SAVE TRAN (Name). Dann kann man mit dem Testen anfangen. Wenn alles gut geht und man nicht zurück muss, macht man einfach COMMIT und alles
@@ -478,7 +478,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-3 tcode">
+            <div class="col-md-3 tcode">
                 <font face="Courier New" size="2">
                     <font color="green"><i>&#45;&#45;&nbsp;Feld&nbsp;PLZ&nbsp;und&nbsp;Ort&nbsp;in&nbsp;der&nbsp;tblOrt&nbsp;mit&nbsp;den&nbsp;Inhalten&nbsp;von&nbsp;der&nbsp;tblPLZ&nbsp;und&nbsp;den&nbsp;Feldern&nbsp;plz&nbsp;und&nbsp;ort1</i></font>
                     <br/>
@@ -508,14 +508,14 @@
                     <font color="black">0</font>&nbsp;
                 </font>
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="tabelleausfüllen">Tabelle ausfüllen aus einer anderen Tabelle</h2><br>
                 <p>Um den Inhalt von einer anderen Tabelle einzufügen, gibt es folgenden Befehl: INSERT INTO tblname (Feld1, Feld2)</p>
                 <p>Mit dem Befehl SELCET bestimmt man welcher Inhalt von welcher Tabelle eingefügt werden soll und mit WHERE kann man alles noch spezifischer machen. Hier ein Beispiel.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3 tcode">
+            <div class="col-md-3 tcode">
                 <font face="Courier New" size="2">
                     <font color="green"><i>&#45;&#45;Tabelle&nbsp;aus&nbsp;CSV-Datei&nbsp;importieren</i></font>
                     <br/>
@@ -558,14 +558,14 @@
                 </font>
 
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="csvdatei">Tabelle aus CSV-Datei importieren</h2><br>
                 <p>Aus einer externen CSV-Datei importiert man mit einem BULK INSERT. Die Syntax sieht wie folgt aus:
                 </p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3 tcode">
+            <div class="col-md-3 tcode">
                 <font face="Courier New" size="2">
                     <font color="blue">SELECT</font>&nbsp;
                     <font color="maroon">date_type</font>
@@ -588,7 +588,7 @@
                 </font>
 
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="datenbanktabelleanalysieren">Datenbank und Tabelle analysieren</h2><br>
                 <p>Mit dem folgenden Befehl kann man herausfinden, welche Tabellen sich in der Datenbank befinden:</p>
                 <br />
@@ -598,16 +598,16 @@
         </div>
 
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h2 id="sprachschichten">SQL-Sprachschichten</h2><br>
                 <p>DDL, DCL, DQL und DML sind die Sprachschichten die SQL hat.</p>
                 <p>Grundsätzlich sind das vier Kategorien in welche einfach alle Befehle unterteilt worden sind.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3 tcode">
+            <div class="col-md-3 tcode">
                 <font face="Courier New" size="2">
                     <font color="green"><i>&#45;&#45;&nbsp;Erstellen&nbsp;einer&nbsp;neuen&nbsp;Datenbank</i></font>
                     <br/>
@@ -675,7 +675,7 @@
                     <font color="maroon">datenbank</font>&nbsp;
                 </font>
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h3 id="ddl">Data Definition Language (DDL)</h3><br>
                 <ul>
                     <li>Erstellen, Ändern und Löschen von Schemaobjekten</li>
@@ -685,7 +685,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-3 tcode">
+            <div class="col-md-3 tcode">
                 <font face="Courier New" size="2">
                     <font color="green"><i>&#45;&#45;&nbsp;Login&nbsp;für&nbsp;einen&nbsp;Benutzer&nbsp;mit&nbsp;Passwort&nbsp;erstellen</i></font>
                     <br/>
@@ -754,13 +754,13 @@
                     <font color="maroon">benutzer</font>&nbsp;
                 </font>
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h3 id="dcl">Data Contol Language (DCL)</h3><br>
                 <p>Alles was mit Benutzern, Logins und Berechtigungen zu tun hat.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3 tcode">
+            <div class="col-md-3 tcode">
                 <font face="Courier New" size="2">
                     <font color="green"><i>&#45;&#45;&nbsp;Inhalt&nbsp;in&nbsp;einer&nbsp;Tabelle&nbsp;in&nbsp;bestimmte&nbsp;Felder&nbsp;einfügen&nbsp;(Datensatz)</i></font>
                     <br/>
@@ -822,13 +822,13 @@
                     <font color="black">0</font>
                 </font>
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h3 id="dml">Data Manipulation Language (DML)</h3><br>
                 <p>Jegliche Befehle im Zusammenhang mit Auswahl, Einfügen, Ändern und Löschen von Datensätzen.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3 tcode">
+            <div class="col-md-3 tcode">
                 <font face="Courier New" size="2">
                     <font color="green"><i>&#45;&#45;&nbsp;Abfrage&nbsp;von&nbsp;Attribut&nbsp;von&nbsp;einer&nbsp;Tabelle,&nbsp;mit&nbsp;spezifischer&nbsp;Angabe&nbsp;geordnet&nbsp;nach&nbsp;dem&nbsp;Attribut</i></font>
                     <br/>
@@ -855,16 +855,16 @@
                 </font>
 
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h3 id="dql">Data Query Language (DQL)</h3><br>
                 <p>Jegliche Abfragen von Tabellen, Datensätzen oder Datenbanken.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
                 <img src="bilder/105/sql-joins.png" alt="">
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h3 id="">Joins</h3><br>
                 <p>Joins sind ein Weg um mehrere Tabellen miteinander zu verbinden um Zusammenhänge über mehrere Tabellen hinweg zu Vergleichen und so leichter an die gewünschten Daten zu kommen. Bei Joins ist es wichtig zu wissen dass die zuerst genannte
                     Tabelle immer die Linke ist und die andere die Rechte.
@@ -872,30 +872,30 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
                 <img src="Bilder/105/rightleftjoin.PNG" alt="">
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h3 id="">LEFT und RIGHT JOIN</h3><br>
                 <p>Left und Right Joins verbinden Tabellen über einen bestimmten Datensatz aber zusätzlich zum ausgewählten Datensatz übernehmen sie noch die Datensätze der jeweils Rechten oder Linken Tabelle und dort wo keine Übereinstimmung besteht wird
                     einfach NULL eingefügt.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
                 <img src="bilder/105/inner_join.png" alt="">
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h3 id="innerjoin">INNER JOIN</h3><br>
                 <p>Der INNER JOIN führt Datensätze aus der linken und rechten Tabelle zusammen, wenn alle angegebenen Kriterien erfüllt sind. Ist eines oder mehrere der Kriterien nicht erfüllt, so wird kein Datensatz ausgegeben.
                 </p>
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
+            <div class="col-md-3">
                 <img src="bilder/105/inner_join.png" alt="">
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h3 id="fulljoin">FULL JOIN</h3><br>
                 <p>Der FULL JOIN oder auch FULL OUTER JOIN ist gewissermassen eine Mischung aus dem LEFT – und RIGHT JOIN. <br><br> Die Logik für diesen Join: Jeder Datensatz der rechten und der linken Tabelle wird bei Abfrage ausgegeben. Findet sich über
                     das ON - Kriterium ein passender Partner werden beide zusammengefügt, andernfalls wird die jeweils fehlende Seite mit NULL aufgefüllt.
@@ -903,7 +903,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-3 tcode">
+            <div class="col-md-3 tcode">
                 <font face="Courier New" size="2">
                     <font color="green"><i>&#45;&#45;&nbsp;Beträge&nbsp;anzeigen&nbsp;lassen,&nbsp;die&nbsp;grösser&nbsp;oder&nbsp;gleich&nbsp;50&nbsp;sind</i></font>
                     <br/>
@@ -945,7 +945,7 @@
                     <font color="maroon">)</font>&nbsp;
                 </font>
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
                 <h3 id="select">SELECT</h3><br>
                 <p>SELECT wird verwendet, um Daten aus einer Datenbank auszulesen. Die zurückgegebenen Daten werden in einer Ereignistabelle gespeichert, die als Ergebnismenge bezeichnet wird. Nun ein paar Beispiele zu SELECT Statement.</p>
                 <p>Man kann mit SELECT Befehlen auch nur einzelne Spalten (Attribute) ausgeben mit: SELECT Spaltenname FROM Tabellenname</p>
