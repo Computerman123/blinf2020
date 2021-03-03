@@ -366,6 +366,9 @@ div#budy {
     max-width: 100%;
     max-height: auto;
 }
+.tcode {
+    overflow: auto;
+}
 @media (max-width: 992px) {
     #flexnav1{
         display: flex;
