@@ -7,14 +7,14 @@ header {
     flex-grow: 0;
 }
 
-body {
+div#budy {
     background-color: white;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-body>main>div>div#news {
+div#budy>main>div>div#news {
     background-color: white;
     color: rgb(11, 106, 194);
     float: right;
@@ -27,7 +27,7 @@ body>main>div>div#news {
     border-width: 5px;
 }
 
-body>div>div#beschreibung {
+div#budy>div>div#beschreibung {
     background-color: white;
     color: rgb(11, 106, 194);
     float: right;
@@ -40,7 +40,7 @@ body>div>div#beschreibung {
     border-width: 5px;
 }
 
-body>div#ueberuns {
+div#budy>div#ueberuns {
     background-color: white;
     color: rgb(11, 106, 194);
     float: left;
@@ -52,7 +52,7 @@ body>div#ueberuns {
     border-width: 5px;
 }
 
-body>div>div#link123 {
+div#budy>div>div#link123 {
     background-color: white;
     color: rgb(11, 106, 194);
     float: right;
@@ -65,7 +65,7 @@ body>div>div#link123 {
     border-width: 5px;
 }
 
-body>main>div#about {
+div#budy>main>div#about {
     background-color: white;
     color: rgb(11, 106, 194);
     float: left;
@@ -77,12 +77,12 @@ body>main>div#about {
     border-width: 5px;
 }
 
-body>header>nav>div>ul>li>a {
+div#budy>header>nav>div>ul>li>a {
     color: white !important;
     font-size: 25px;
 }
 
-body>header>nav>div>ul>li:hover {
+div#budy>header>nav>div>ul>li:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -151,7 +151,7 @@ iframe {
     border: 0;
 }
 
-.tab-content div.card-body {
+.tab-content div.card-div#budy {
     border-style: solid;
     border-color: rgb(195, 225, 234);
     border-radius: 8px;
@@ -243,7 +243,7 @@ footer a {
     padding-left: 0px;
 }
 
-body {
+div#budy {
     margin: 0;
     padding: 0;
 }
@@ -365,4 +365,38 @@ body {
 .blah img {
     max-width: 100%;
     max-height: auto;
+}
+@media (max-width: 992px) {
+    #flexnav1{
+        display: flex;
+        flex-direction: column;
+        width: 0;
+        float: left;
+        overflow: initial;
+    }
+    #navabstand {
+        float: left;
+        width: 0;
+        height: 700px;
+    }
+    #stick {
+        overflow: initial;
+        display: flex;
+        align-items: flex-start;
+        width: 0;
+        height:6200px;
+        float: left;
+        margin-top: 5px;
+    }
+    #menuToggle {
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 1rem;
+        margin: 5px;
+    }
+}
+@media (max-height: 787px) {
+    #menu li {
+        padding: 0;
+    }
 }

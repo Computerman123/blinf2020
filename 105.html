@@ -13,50 +13,9 @@
 </head>
 
 <body>
-    <header>
-        <div id="progressbar"></div>
-        <div id="scrollPath"></div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html">
-                <img src="bilder/logo.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ueberuns.html">Über uns</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Lerndokus
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="304.html">304-Pc installieren und konfigurieren</a>
-                            <a class="dropdown-item" href="305.html">305-Multiusersysteme installieren, konfigurieren
-                                und administrieren</a>
-                            <a class="dropdown-item" href="101.html">101-Webauftritt gestalten und realisieren</a>
-                            <a class="dropdown-item" href="289.html">289-CMS einsetzen und bewirtschaften</a>
-                            <a class="dropdown-item" href="105.html">105-Datenbanken mit SQL bearbeiten</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="wibilea.html">Wibilea</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">🔼</button>
-    <h2 class="text-center text-muted mt-3 mb-4">Lerndoku vom Modul 289 – CMS einsetzen und bewirtschaften</h2>
-    <br />
-
-    <nav role="navigation">
+    <div id="flexnav1">
+    <div id="navabstand"></div>
+    <nav id="stick" role="navigation">
         <div id="menuToggle">
 
             <input type="checkbox" />
@@ -131,6 +90,52 @@
             </ul>
         </div>
     </nav>
+</div>
+    <div id="budy">
+    <header>
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="bilder/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ueberuns.html">Über uns</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Lerndokus
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="304.html">304-Pc installieren und konfigurieren</a>
+                            <a class="dropdown-item" href="305.html">305-Multiusersysteme installieren, konfigurieren
+                                und administrieren</a>
+                            <a class="dropdown-item" href="101.html">101-Webauftritt gestalten und realisieren</a>
+                            <a class="dropdown-item" href="289.html">289-CMS einsetzen und bewirtschaften</a>
+                            <a class="dropdown-item" href="105.html">105-Datenbanken mit SQL bearbeiten</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wibilea.html">Wibilea</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">🔼</button>
+    <h2 class="text-center text-muted mt-3 mb-4">Lerndoku vom Modul 289 – CMS einsetzen und bewirtschaften</h2>
+    <br />
+
+ 
 
     <div class="container blah">
         <div class="row">
@@ -470,6 +475,7 @@
     <script>
         new Zooming().listen('img')
     </script>
+    </div>
 </body>
 
 </html>
