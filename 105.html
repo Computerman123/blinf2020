@@ -13,9 +13,50 @@
 </head>
 
 <body>
-    <div id="flexnav1">
-    <div id="navabstand"></div>
-    <nav id="stick" role="navigation">
+    <header>
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="bilder/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ueberuns.html">Über uns</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Lerndokus
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="304.html">304-Pc installieren und konfigurieren</a>
+                            <a class="dropdown-item" href="305.html">305-Multiusersysteme installieren, konfigurieren
+                                und administrieren</a>
+                            <a class="dropdown-item" href="101.html">101-Webauftritt gestalten und realisieren</a>
+                            <a class="dropdown-item" href="289.html">289-CMS einsetzen und bewirtschaften</a>
+                            <a class="dropdown-item" href="105.html">105-Datenbanken mit SQL bearbeiten</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wibilea.html">Wibilea</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">🔼</button>
+    <h2 class="text-center text-muted mt-3 mb-4">Lerndoku vom Modul 289 – CMS einsetzen und bewirtschaften</h2>
+    <br />
+
+    <nav role="navigation">
         <div id="menuToggle">
 
             <input type="checkbox" />
@@ -90,52 +131,6 @@
             </ul>
         </div>
     </nav>
-</div>
-    <div id="budy">
-    <header>
-        <div id="progressbar"></div>
-        <div id="scrollPath"></div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html">
-                <img src="bilder/logo.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ueberuns.html">Über uns</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Lerndokus
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="304.html">304-Pc installieren und konfigurieren</a>
-                            <a class="dropdown-item" href="305.html">305-Multiusersysteme installieren, konfigurieren
-                                und administrieren</a>
-                            <a class="dropdown-item" href="101.html">101-Webauftritt gestalten und realisieren</a>
-                            <a class="dropdown-item" href="289.html">289-CMS einsetzen und bewirtschaften</a>
-                            <a class="dropdown-item" href="105.html">105-Datenbanken mit SQL bearbeiten</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="wibilea.html">Wibilea</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">🔼</button>
-    <h2 class="text-center text-muted mt-3 mb-4">Lerndoku vom Modul 289 – CMS einsetzen und bewirtschaften</h2>
-    <br />
-
- 
 
     <div class="container blah">
         <div class="row">
@@ -166,7 +161,8 @@
                 <p>Ein Microsoft SQL Server installiert man indem sich die Installationsdatei herunterladet und ausführt. Dann wählt man New SQL Server und wählt die Lizenz die man möchte und akzeptiert dann die Vereinbarungen. Danach ist es empfohlen ‘Use
                     Microsoft Update to check for updates’ auszuwählen um den SQL Server aktuell zu halten. Bei der Auswahl der Eigenschaften (Features) alle Häkchen unterhalb Databases Engine Services entfernen. Dann kann man die Instanz benennen. Bei
                     der Authentifizierung sollte man mixed mode nehmen um dem Datenbank Admin ein Passwort zu geben. Sobald man dann mit der Installation fertig ist kann man ein cmd öffnen und mit dem Befehl: ‘sqlcmd -S sql105\wibilea ’ auf die Datenbank
-                    zugreifen.</p>
+                    zugreifen.
+                </p>
             </div>
         </div>
         <div class="row">
@@ -230,7 +226,48 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/105/create_table.png" alt="Tabelle erstellen" />
+                <font face="Courier New" size="2">
+                    <font color="blue">CREATE</font>&nbsp;
+                    <font color="blue">TABLE</font>&nbsp;
+                    <font color="maroon">tblkunde</font>
+                    <br/>&nbsp;&nbsp;
+                    <font color="maroon">(</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">pk_kunde</font>&nbsp;&nbsp;&nbsp;
+                    <font color="black"><i>INT</i></font>&nbsp;
+                    <font color="blue">IDENTITY</font>
+                    <font color="maroon">(</font>
+                    <font color="black">1</font>
+                    <font color="silver">,</font>&nbsp;
+                    <font color="black">1</font>
+                    <font color="maroon">)</font>&nbsp;
+                    <font color="blue">PRIMARY</font>&nbsp;
+                    <font color="blue">KEY</font>
+                    <font color="silver">,</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">fk_akte</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="black"><i>INT</i></font>&nbsp;
+                    <font color="blue">FOREIGN</font>&nbsp;
+                    <font color="blue">KEY</font>&nbsp;
+                    <font color="blue">REFERENCES</font>&nbsp;
+                    <font color="maroon">tblakten</font>
+                    <font color="maroon">(</font>
+                    <font color="maroon">pk_akte</font>
+                    <font color="maroon">)</font>
+                    <font color="silver">,</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">kundenname</font>&nbsp;
+                    <font color="black"><i>VARCHAR</i></font>
+                    <font color="maroon">(</font>
+                    <font color="black">50</font>
+                    <font color="maroon">)</font>
+                    <br/>&nbsp;&nbsp;
+                    <font color="maroon">)</font>
+                    <br/>
+                    <br/>
+                    <font color="maroon">go</font>&nbsp;
+                </font>
+
             </div>
             <div class="col-9">
                 <h2 id="tbl">Tabelle</h2><br>
@@ -251,7 +288,34 @@
 
         <div class="row">
             <div class="col-3">
-                <img src="bilder/105/alter_table.png" alt="ALTER" />
+                <font face="Courier New" size="2">
+                    <font color="blue">ALTER</font>&nbsp;
+                    <font color="blue">TABLE</font>&nbsp;
+                    <font color="maroon">tblperson</font>
+                    <br/>&nbsp;&nbsp;
+                    <font color="blue">DROP</font>&nbsp;
+                    <font color="blue">COLUMN</font>&nbsp;
+                    <font color="maroon">fax</font>
+                    <br/>
+                    <br/>
+                    <font color="maroon">go</font>
+                    <br/>
+                    <br/>
+                    <font color="blue">ALTER</font>&nbsp;
+                    <font color="blue">TABLE</font>&nbsp;
+                    <font color="maroon">tblperson</font>
+                    <br/>&nbsp;&nbsp;
+                    <font color="blue">ADD</font>&nbsp;
+                    <font color="maroon">email</font>&nbsp;
+                    <font color="black"><i>VARCHAR</i></font>
+                    <font color="maroon">(</font>
+                    <font color="black">100</font>
+                    <font color="maroon">)</font>
+                    <br/>
+                    <br/>
+                    <font color="maroon">go</font>&nbsp;
+                </font>
+
             </div>
             <div class="col-9">
                 <h2 id="attribut">Attribut</h2><br>
@@ -261,8 +325,76 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/105/login_benutzer.png" alt="Logins und Benutzer erstellen" />
-                <img src="bilder/105/tabelle_berechtigungen.png" alt="Tabelle der Berechtigungen" />
+                <font face="Courier New" size="2">
+                    <font color="green"><i>&#45;&#45;&nbsp;Login&nbsp;erstellen</i></font>
+                    <br/>
+                    <font color="blue">CREATE</font>&nbsp;
+                    <font color="maroon">login</font>&nbsp;
+                    <font color="maroon">hans</font>&nbsp;
+                    <font color="blue">WITH</font>&nbsp;
+                    <font color="maroon">password</font>
+                    <font color="silver">=</font>
+                    <font color="red">'123'</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Login&nbsp;löschen</i></font>
+                    <br/>
+                    <font color="#8000FF">sp_droplogin</font>&nbsp;
+                    <font color="maroon">hans</font>&nbsp;
+                    <font color="silver">//</font>
+                    <font color="blue">DROP</font>&nbsp;
+                    <font color="maroon">login</font>&nbsp;
+                    <font color="maroon">hans</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;benutzer&nbsp;erstellen&nbsp;->&nbsp;Hat&nbsp;Rechte&nbsp;für&nbsp;Datenbank,&nbsp;nicht&nbsp;für&nbsp;Tabellen</i></font>
+                    <font color="blue">CREATE</font>&nbsp;
+                    <font color="blue">USER</font>&nbsp;
+                    <font color="maroon">benutzer</font>&nbsp;
+                    <font color="blue">FOR</font>&nbsp;
+                    <font color="maroon">login</font>&nbsp;
+                    <font color="maroon">benutzer</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Benutzer&nbsp;löschen</i></font>
+                    <font color="blue">DROP</font>&nbsp;
+                    <font color="blue">USER</font>&nbsp;
+                    <font color="maroon">benutzer</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Berechtigungen&nbsp;vergeben</i></font>
+                    <font color="blue">GRANT</font>
+                    <br/>
+                    <font color="blue">SELECT</font>&nbsp;
+                    <font color="maroon">to</font>&nbsp;
+                    <font color="maroon">hans</font>
+                    <font color="blue">GRANT</font>
+                    <br/>
+                    <font color="blue">SELECT</font>
+                    <br/>
+                    <font color="blue">ON</font>&nbsp;
+                    <font color="maroon">tblperson</font>&nbsp;
+                    <font color="blue">TO</font>&nbsp;
+                    <font color="maroon">hans</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="green"><i>&#45;&#45;&nbsp;Berechtigungen&nbsp;entfernen</i></font>
+                    <font color="blue">REVOKE</font>
+                    <font color="blue">SELECT</font>&nbsp;
+                    <font color="maroon">to</font>&nbsp;
+                    <font color="maroon">hans</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="green"><i>&#45;&#45;&nbsp;DataBaseOwner&nbsp;vergeben&nbsp;(Alle&nbsp;Rechte)</i></font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="#8000FF">sp_addrolemember</font>&nbsp;
+                    <font color="red">'db_owner'</font>
+                    <font color="silver">,</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="red">'Hans'</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="green"><i>&#45;&#45;&nbsp;DataBaseOwner&nbsp;entfernen</i></font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="#8000FF">sp_droprolemember</font>&nbsp;
+                    <font color="red">'db_owner'</font>
+                    <font color="silver">,</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="red">'Hans'</font>
+                </font>
             </div>
             <div class="col-9">
                 <h2 id="loginbenutzer">Logins und Benutzer erstellen</h2><br>
@@ -273,7 +405,32 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/105/delete_from.png" alt="Einträge löschen" />
+                <font face="Courier New" size="2">
+                    <font color="green"><i>&#45;&#45;&nbsp;Löscht&nbsp;alle&nbsp;mit&nbsp;PLZ&nbsp;8212</i></font>
+                    <br/>
+                    <font color="blue">DELETE</font>&nbsp;
+                    <font color="blue">FROM</font>&nbsp;
+                    <font color="maroon">tblperson</font>
+                    <br/>
+                    <font color="blue">WHERE</font>&nbsp;&nbsp;
+                    <font color="maroon">plz</font>&nbsp;
+                    <font color="silver">=</font>&nbsp;
+                    <font color="black">8212</font>
+                    <br/>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Löscht&nbsp;alle&nbsp;Einträge</i></font>
+                    <br/>
+                    <font color="blue">DELETE</font>&nbsp;
+                    <font color="blue">FROM</font>&nbsp;
+                    <font color="maroon">tblperson</font>
+                    <br/>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Löscht&nbsp;alle&nbsp;Einträge&nbsp;und&nbsp;setzt&nbsp;Nummerierung&nbsp;zurück</i></font>
+                    <br/>
+                    <font color="blue">TRUNCATE</font>&nbsp;
+                    <font color="blue">TABLE</font>&nbsp;
+                    <font color="maroon">tblperson</font>&nbsp;
+                </font>
             </div>
             <div class="col-9">
                 <h2 id="einträgelöschen">Spezifische Einträge löschen</h2><br>
@@ -282,19 +439,71 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/105/transaktion.png" alt="Transaktion" />
+                <font face="Courier New" size="2">
+                    <font color="green"><i>&#45;&#45;&nbsp;Transaktion&nbsp;starten</i></font>
+                    <br/>
+                    <font color="blue">BEGIN</font>&nbsp;
+                    <font color="blue">TRAN</font>
+                    <br/>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;SavePoint&nbsp;erstellen</i></font>
+                    <br/>
+                    <font color="blue">SAVE</font>&nbsp;
+                    <font color="blue">TRAN</font>&nbsp;
+                    <font color="maroon">st1</font>&nbsp;
+                    <font color="green"><i>&#45;&#45;(NAME)</i></font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;SavePoint&nbsp;wiederherstellen</i></font>
+                    <br/>
+                    <font color="blue">ROLLBACK</font>&nbsp;
+                    <font color="blue">TRAN</font>&nbsp;
+                    <font color="maroon">st1</font>&nbsp;
+                    <font color="green"><i>&#45;&#45;(NAME)</i></font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Alles&nbsp;bestätigen&nbsp;und&nbsp;Transaktion&nbsp;beenden&nbsp;und&nbsp;löschen</i></font>
+                    <br/>
+                    <font color="blue">COMMIT</font>&nbsp;
+                </font>
             </div>
             <div class="col-9">
                 <h2 id="transaktionen">Transaktionen</h2><br>
                 <p>Mit Transaktionen kann man wie eine Testumgebung erstellen und auf einen Save Point zurückgehen, wenn man einen Fehler gemacht hat.</p> <br />
                 <p>Mit BEGIN TRAN startet man die Transaktion wie man im Bild sieht. Man erstellt einen Save Point mit SAVE TRAN (Name). Dann kann man mit dem Testen anfangen. Wenn alles gut geht und man nicht zurück muss, macht man einfach COMMIT und alles
                     wird bestätigt und die Transaktion wird gelöscht. Wenn man aber einen Fehler gemacht hat, kann man einfach mit ROLLBACK TRAN (Name) auf den Stand vom Save Point zurück und alles ist wieder wie es war als man den Save Point erstellt
-                    hat.</p>
+                    hat.
+                </p>
             </div>
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/105/insert_into.png" alt="Tabelle ausfüllen" />
+                <font face="Courier New" size="2">
+                    <font color="green"><i>&#45;&#45;&nbsp;Feld&nbsp;PLZ&nbsp;und&nbsp;Ort&nbsp;in&nbsp;der&nbsp;tblOrt&nbsp;mit&nbsp;den&nbsp;Inhalten&nbsp;von&nbsp;der&nbsp;tblPLZ&nbsp;und&nbsp;den&nbsp;Feldern&nbsp;plz&nbsp;und&nbsp;ort1</i></font>
+                    <br/>
+                    <font color="blue">INSERT</font>&nbsp;
+                    <font color="blue">INTO</font>&nbsp;
+                    <font color="maroon">tblort</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">(</font>
+                    <font color="maroon">plz</font>
+                    <font color="silver">,</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">ort</font>
+                    <font color="maroon">)</font>
+                    <br/>
+                    <font color="blue">SELECT</font>&nbsp;
+                    <font color="maroon">plz</font>
+                    <font color="silver">,</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">ort1</font>
+                    <br/>
+                    <font color="blue">FROM</font>&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">tblplz</font>
+                    <br/>
+                    <font color="blue">WHERE</font>&nbsp;&nbsp;
+                    <font color="maroon">plz2</font>&nbsp;
+                    <font color="silver">=</font>&nbsp;
+                    <font color="black">0</font>&nbsp;
+                </font>
             </div>
             <div class="col-9">
                 <h2 id="tabelleausfüllen">Tabelle ausfüllen aus einer anderen Tabelle</h2><br>
@@ -304,7 +513,47 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/105/import_csv.png" alt="CSV-Datei importieren" />
+                <font face="Courier New" size="2">
+                    <font color="green"><i>&#45;&#45;Tabelle&nbsp;aus&nbsp;CSV-Datei&nbsp;importieren</i></font>
+                    <br/>
+                    <font color="blue">BULK</font>&nbsp;
+                    <font color="blue">INSERT</font>&nbsp;
+                    <font color="maroon">tblplz</font>
+                    <br/>&nbsp;&nbsp;
+                    <font color="blue">FROM</font>&nbsp;
+                    <font color="red">'C:\Users\LocalAdmin\Document\105_plz.csv'</font>
+                    <br/>&nbsp;&nbsp;
+                    <font color="blue">WITH</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">(</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="green"><i>&#45;&#45;FORMAT&nbsp;=&nbsp;'CSV',&nbsp;(Optional)</i></font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">firstrow</font>&nbsp;
+                    <font color="silver">=</font>&nbsp;
+                    <font color="black">2</font>
+                    <font color="silver">,</font>&nbsp;
+                    <font color="green"><i>&#45;&#45;&nbsp;Ab&nbsp;welcher&nbsp;Zeile&nbsp;begonnen&nbsp;wird</i></font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">fieldterminator</font>&nbsp;
+                    <font color="silver">=</font>&nbsp;
+                    <font color="red">';'</font>
+                    <font color="silver">,</font>&nbsp;
+                    <font color="green"><i>&#45;&#45;&nbsp;Wie&nbsp;die&nbsp;einzelnen&nbsp;Felder&nbsp;getrennt&nbsp;sind</i></font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">rowterminator</font>&nbsp;
+                    <font color="silver">=</font>&nbsp;
+                    <font color="red">'\n'</font>
+                    <font color="silver">,</font>&nbsp;
+                    <font color="green"><i>&#45;&#45;&nbsp;Wie&nbsp;die&nbsp;einzelnen&nbsp;Zeilen&nbsp;getrennt&nbsp;sind</i></font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">tablock</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">)</font>
+                    <br/>
+                    <font color="maroon">go</font>&nbsp;
+                </font>
+
             </div>
             <div class="col-9">
                 <h2 id="csvdatei">Tabelle aus CSV-Datei importieren</h2><br>
@@ -314,8 +563,27 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/105/analyse_1.png" alt="Analyse">
-                <img src="bilder/105/analyse_2.png" alt="Analyse">
+                <font face="Courier New" size="2">
+                    <font color="blue">SELECT</font>&nbsp;
+                    <font color="maroon">date_type</font>
+                    <font color="silver">,</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">column_name</font>
+                    <br/>
+                    <font color="blue">FROM</font>&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">information_schema</font>
+                    <font color="silver">.</font>
+                    <font color="maroon">columns</font>
+                    <br/>
+                    <font color="blue">WHERE</font>&nbsp;&nbsp;
+                    <font color="maroon">table_name</font>&nbsp;
+                    <font color="silver">=</font>&nbsp;
+                    <font color="red">'Tabellenname'</font>
+                    <br/>
+                    <br/>
+                    <font color="maroon">go</font>&nbsp;
+                </font>
+
             </div>
             <div class="col-9">
                 <h2 id="datenbanktabelleanalysieren">Datenbank und Tabelle analysieren</h2><br>
@@ -337,7 +605,72 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/105/ddl.png" alt="Befehle DDL">
+                <font face="Courier New" size="2">
+                    <font color="green"><i>&#45;&#45;&nbsp;Erstellen&nbsp;einer&nbsp;neuen&nbsp;Datenbank</i></font>
+                    <br/>
+                    <font color="blue">CREATE</font>&nbsp;
+                    <font color="blue">DATABASE</font>&nbsp;
+                    <font color="maroon">datenbank</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Erstellen&nbsp;einer&nbsp;neuen&nbsp;Tabelle</i></font>
+                    <br/>
+                    <font color="blue">CREATE</font>&nbsp;
+                    <font color="blue">TABLE</font>&nbsp;
+                    <font color="maroon">tabelle</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Bei&nbsp;einer&nbsp;Tabelle&nbsp;ein&nbsp;Feld&nbsp;hinzufügen</i></font>
+                    <br/>
+                    <font color="blue">ALTER</font>&nbsp;
+                    <font color="blue">TABLE</font>&nbsp;
+                    <font color="maroon">tabelle</font>&nbsp;
+                    <font color="blue">ADD</font>&nbsp;
+                    <font color="maroon">feld</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Bei&nbsp;einer&nbsp;Tabelle&nbsp;ein&nbsp;Feld&nbsp;löschen</i></font>
+                    <br/>
+                    <font color="blue">ALTER</font>&nbsp;
+                    <font color="blue">TABLE</font>&nbsp;
+                    <font color="maroon">tabelle</font>&nbsp;
+                    <font color="blue">DROP</font>&nbsp;
+                    <font color="maroon">feld</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Bei&nbsp;einer&nbsp;Tabelle&nbsp;in&nbsp;einer&nbsp;Spalte&nbsp;ein&nbsp;Feld&nbsp;bearbeiten</i></font>
+                    <br/>
+                    <font color="blue">ALTER</font>&nbsp;
+                    <font color="blue">TABLE</font>&nbsp;
+                    <font color="maroon">tabelle</font>&nbsp;
+                    <font color="blue">ALTER</font>&nbsp;
+                    <font color="blue">COLUMN</font>&nbsp;
+                    <font color="maroon">feld</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Eine&nbsp;Tabelle&nbsp;umbennen</i></font>
+                    <br/>
+                    <font color="#8000FF">sp_rename</font>&nbsp;
+                    <font color="red">'Tabelle'</font>
+                    <font color="silver">,</font>&nbsp;
+                    <font color="red">'Tabelle-neu'</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Feld&nbsp;in&nbsp;einer&nbsp;Tabelle&nbsp;umbennen</i></font>
+                    <br/>
+                    <font color="#8000FF">sp_rename</font>&nbsp;
+                    <font color="red">'Tabelle,&nbsp;Feld'</font>
+                    <font color="silver">,</font>&nbsp;
+                    <font color="red">'Feld-neu'</font>
+                    <font color="silver">,</font>&nbsp;
+                    <font color="red">'COLUMN'</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Eine&nbsp;Tabelle&nbsp;löschen</i></font>
+                    <br/>
+                    <font color="blue">DROP</font>&nbsp;
+                    <font color="blue">TABLE</font>&nbsp;
+                    <font color="maroon">tabelle</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Eine&nbsp;Datenbank&nbsp;löschen</i></font>
+                    <br/>
+                    <font color="blue">DROP</font>&nbsp;
+                    <font color="blue">DATABASE</font>&nbsp;
+                    <font color="maroon">datenbank</font>&nbsp;
+                </font>
             </div>
             <div class="col-9">
                 <h3 id="ddl">Data Definition Language (DDL)</h3><br>
@@ -350,7 +683,73 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/105/dcl.png" alt="Befehle DCL">
+                <font face="Courier New" size="2">
+                    <font color="green"><i>&#45;&#45;&nbsp;Login&nbsp;für&nbsp;einen&nbsp;Benutzer&nbsp;mit&nbsp;Passwort&nbsp;erstellen</i></font>
+                    <br/>
+                    <font color="blue">CREATE</font>&nbsp;
+                    <font color="maroon">login</font>&nbsp;
+                    <font color="maroon">benutzer</font>&nbsp;
+                    <font color="blue">WITH</font>&nbsp;
+                    <font color="maroon">password</font>
+                    <font color="silver">=</font>
+                    <font color="red">'Passwort'</font>
+                    <br/>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Benutzer&nbsp;für&nbsp;das&nbsp;Login&nbsp;erstellen&nbsp;(Wichtig,&nbsp;dass&nbsp;man&nbsp;in&nbsp;der&nbsp;richtigen&nbsp;Datenbank&nbsp;ist)</i></font>
+                    <br/>
+                    <font color="blue">CREATE</font>&nbsp;
+                    <font color="maroon">user</font>&nbsp;
+                    <font color="maroon">benutzer</font>&nbsp;
+                    <font color="maroon">for</font>&nbsp;
+                    <font color="maroon">login</font>&nbsp;
+                    <font color="maroon">benutzer</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Bestimmtes&nbsp;Recht&nbsp;von&nbsp;Benutzer&nbsp;entfernen</i></font>
+                    <br/>
+                    <font color="maroon">revoke</font>&nbsp;
+                    <font color="maroon">grant</font>&nbsp;
+                    <font color="maroon">recht</font>&nbsp;
+                    <font color="maroon">to</font>&nbsp;
+                    <font color="maroon">benutzer</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Bestimmtes&nbsp;Recht&nbsp;von&nbsp;Benutzer&nbsp;verweigern&nbsp;(wird&nbsp;wenig,&nbsp;selten&nbsp;verwendet)</i></font>
+                    <br/>
+                    <font color="maroon">deny</font>&nbsp;
+                    <font color="maroon">grant</font>&nbsp;
+                    <font color="maroon">recht</font>&nbsp;
+                    <font color="blue">ON</font>&nbsp;
+                    <font color="maroon">tabelle</font>&nbsp;
+                    <font color="maroon">to</font>&nbsp;
+                    <font color="maroon">benutzer</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Rolle&nbsp;dem&nbsp;Benutzer&nbsp;hinzufügen</i></font>
+                    <br/>
+                    <font color="#8000FF">sp_addrolemember</font>&nbsp;
+                    <font color="red">'Rolle'</font>
+                    <font color="silver">,</font>&nbsp;
+                    <font color="red">'Benutzer'</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Rolle&nbsp;dem&nbsp;Benutzer&nbsp;entfernen</i></font>
+                    <br/>
+                    <font color="#8000FF">sp_droprolemember</font>&nbsp;
+                    <font color="red">'Rolle'</font>
+                    <font color="silver">,</font>&nbsp;
+                    <font color="red">'Benutzer'</font>
+                    <br/>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Benutzer&nbsp;löschen</i></font>
+                    <br/>
+                    <font color="blue">DROP</font>&nbsp;
+                    <font color="maroon">user</font>&nbsp;
+                    <font color="maroon">benutzer</font>
+                    <br/>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Login&nbsp;löschen</i></font>
+                    <br/>
+                    <font color="blue">DROP</font>&nbsp;
+                    <font color="maroon">login</font>&nbsp;
+                    <font color="maroon">benutzer</font>&nbsp;
+                </font>
             </div>
             <div class="col-9">
                 <h3 id="dcl">Data Contol Language (DCL)</h3><br>
@@ -359,7 +758,66 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/105/dml.png" alt="Befehle DML">
+                <font face="Courier New" size="2">
+                    <font color="green"><i>&#45;&#45;&nbsp;Inhalt&nbsp;in&nbsp;einer&nbsp;Tabelle&nbsp;in&nbsp;bestimmte&nbsp;Felder&nbsp;einfügen&nbsp;(Datensatz)</i></font>
+                    <br/>
+                    <font color="blue">INSERT</font>&nbsp;
+                    <font color="blue">INTO</font>&nbsp;
+                    <font color="maroon">tabelle</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">(</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">feld1</font>
+                    <font color="silver">,</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">feld2</font>
+                    <font color="silver">,</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="silver">.</font>
+                    <font color="silver">.</font>
+                    <font color="silver">.</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">)</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="blue">VALUES</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">(</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="black">0</font>
+                    <font color="silver">,</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="red">'bla'</font>
+                    <font color="silver">,</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="red">'X'</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">)</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Einen&nbsp;Datensatz&nbsp;bearbeiten</i></font>
+                    <font color="blue">UPDATE</font>&nbsp;
+                    <font color="maroon">tabelle</font>
+                    <br/>
+                    <font color="blue">SET</font>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">plz</font>
+                    <font color="silver">=</font>
+                    <font color="black">8212</font>
+                    <br/>
+                    <font color="blue">WHERE</font>&nbsp;&nbsp;
+                    <font color="maroon">x</font>
+                    <font color="silver">=</font>
+                    <font color="black">0</font>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Einen&nbsp;Datensatz&nbsp;löschenn</i></font>
+                    <font color="blue">DELETE</font>
+                    <br/>
+                    <font color="blue">FROM</font>&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">tabelle</font>
+                    <br/>
+                    <font color="blue">WHERE</font>&nbsp;&nbsp;
+                    <font color="maroon">x</font>
+                    <font color="silver">=</font>
+                    <font color="black">0</font>
+                </font>
             </div>
             <div class="col-9">
                 <h3 id="dml">Data Manipulation Language (DML)</h3><br>
@@ -368,7 +826,31 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/105/dql.png" alt="Befehle DQL">
+                <font face="Courier New" size="2">
+                    <font color="green"><i>&#45;&#45;&nbsp;Abfrage&nbsp;von&nbsp;Attribut&nbsp;von&nbsp;einer&nbsp;Tabelle,&nbsp;mit&nbsp;spezifischer&nbsp;Angabe&nbsp;geordnet&nbsp;nach&nbsp;dem&nbsp;Attribut</i></font>
+                    <br/>
+                    <font color="blue">SELECT</font>&nbsp;
+                    <font color="#FF0080"><b>Attribut</b></font>
+                    <font color="maroon">(</font>
+                    <font color="maroon">e</font>
+                    <font color="maroon">)</font>
+                    <br/>
+                    <font color="blue">FROM</font>&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">tabelle</font>
+                    <br/>
+                    <font color="blue">WHERE</font>&nbsp;&nbsp;
+                    <font color="maroon">x</font>&nbsp;
+                    <font color="silver">=</font>&nbsp;
+                    <font color="black">2</font>
+                    <br/>
+                    <font color="blue">ORDER</font>&nbsp;&nbsp;
+                    <font color="blue">BY</font>&nbsp;
+                    <font color="#FF0080"><b>Attribut</b></font>
+                    <font color="maroon">(</font>
+                    <font color="maroon">e</font>
+                    <font color="maroon">)</font>&nbsp;
+                </font>
+
             </div>
             <div class="col-9">
                 <h3 id="dql">Data Query Language (DQL)</h3><br>
@@ -419,7 +901,46 @@
         </div>
         <div class="row">
             <div class="col-3">
-                <img src="bilder/105/selects.png" alt="">
+                <font face="Courier New" size="2">
+                    <font color="green"><i>&#45;&#45;&nbsp;Beträge&nbsp;anzeigen&nbsp;lassen,&nbsp;die&nbsp;rösser&nbsp;oder&nbsp;gleich&nbsp;50&nbsp;sind</i></font>
+                    <br/>
+                    <font color="blue">SELECT</font>&nbsp;
+                    <font color="silver">*</font>
+                    <br/>
+                    <font color="blue">FROM</font>&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">tblspenden</font>
+                    <br/>
+                    <font color="blue">WHERE</font>&nbsp;&nbsp;
+                    <font color="maroon">betrag</font>&nbsp;
+                    <font color="silver">&gt;=</font>&nbsp;
+                    <font color="black">50</font>
+                    <br/>
+                    <br/>
+                    <font color="green"><i>&#45;&#45;&nbsp;Die&nbsp;Beträge&nbsp;sollen&nbsp;kleiner&nbsp;als&nbsp;20&nbsp;sein&nbsp;oder&nbsp;grösser&nbsp;als&nbsp;30&nbsp;und&nbsp;kleiner&nbsp;als&nbsp;100&nbsp;sein</i></font>
+                    <br/>
+                    <font color="blue">SELECT</font>&nbsp;
+                    <font color="silver">*</font>
+                    <br/>
+                    <font color="blue">FROM</font>&nbsp;&nbsp;&nbsp;
+                    <font color="maroon">tblspenden</font>
+                    <br/>
+                    <font color="blue">WHERE</font>&nbsp;&nbsp;
+                    <font color="maroon">betrag</font>&nbsp;
+                    <font color="silver">&lt;</font>&nbsp;
+                    <font color="black">20</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="blue">OR</font>&nbsp;
+                    <font color="maroon">(</font>&nbsp;
+                    <font color="maroon">betrag</font>&nbsp;
+                    <font color="silver">&gt;</font>&nbsp;
+                    <font color="black">30</font>
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <font color="blue">AND</font>&nbsp;
+                    <font color="maroon">betrag</font>&nbsp;
+                    <font color="silver">&lt;</font>&nbsp;
+                    <font color="black">100</font>&nbsp;
+                    <font color="maroon">)</font>&nbsp;
+                </font>
             </div>
             <div class="col-9">
                 <h3 id="select">SELECT</h3><br>
@@ -475,7 +996,6 @@
     <script>
         new Zooming().listen('img')
     </script>
-    </div>
 </body>
 
 </html>
