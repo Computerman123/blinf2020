@@ -378,7 +378,12 @@ div#budy {
 font[color=silver] {
     color: black;
 }
-
+th, td {
+    padding: 7px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
 @media (max-width: 992px) {
     #flexnav1{
         display: flex;
