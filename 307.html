@@ -496,6 +496,40 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-md-3">
+                    <!--Platzhalter für NUR 1!! BILD oder Code-->
+                </div>
+                <div class="col-md-9">
+                    <h2 id="JavaScript">Security</h2><br>
+                    <p>Wenn man einen Input vom User entgegennimmt ist es wichtig zu überprüfen ob dieser eine Gefahr darstellt da der User zum Beispiel Code eingeben könnte der eine Datenbank löscht oder sogar den Inhalt der Datenbank irgendwohin sendet.</p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <!--Platzhalter für NUR 1!! BILD oder Code-->
+                </div>
+                <div class="col-md-9">
+                    <h2 id="JavaScript">SQL-Injection</h2><br>
+                    <p>SQL-Injection ist dann wenn beispielsweise in ein Feld in das ein Name eingegeben werden soll welcher dann in ein SQL Statement eingef&uuml;gt wird um einen Output zu erzielen, SQL Code eingegeben wird welcher dann unwissentlich ausgef&uuml;hrt wird und so entweder die Datenbank besch&auml;digt oder sensible Daten wie Passw&ouml;rter oder E-Mail Adressen an den Angreifer ausgibt.</p>
+                    <p>SQL-Injection kann ganz einfach mit der Funktion &lsquo;mysql_real_escape_string()&rsquo; behoben werden welche den Input sicher f&uuml;r eine Eingabe in eine Datenbank macht, aber dennoch gibt es leider immernoch zu viele Seiten welche mangelnden Schutz gegen SQL-Injection Angriffe haben.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <!--Platzhalter für NUR 1!! BILD oder Code-->
+                </div>
+                <div class="col-md-9">
+                    <h2 id="JavaScript">Cross-Site Scripting</h2><br>
+                    <p>XXS(Cross-Site Scripting) ist dann wenn in ein Feld welches dann andere sehen k&ouml;nnen wie einen Kommentar, ein &lt;script&gt;-Tag eingef&uuml;gt wird was verursacht dass man in dem Browser von jemandem Js auff&uuml;hren kann. Dies kann etwas harmloses sein das zum Beispiel alle Bilder ersetzt durch Bilder von Katzen, oder etwas schlechtes wie das &auml;ndern von Links so das sie zu Phising Seiten f&uuml;hren.</p>
+                    <p>XXS kann ebenfalls ganz einfach mit htmlspecialchars() verhindert werden. Leider sind hier auch viele Seiten nicht zureichend abgesichert.</p>
+
+                </div>
+            </div>
+
         </div>
     </div>
     <div id="footer" class="d-flex flex-column min-vh-100 text-white">
