@@ -299,8 +299,9 @@
                     <p>DOM steht für Document Object Model. Mithilfe von DOM können Browser ein Modell einer HTML – Seite erstellen. Dadurch können Javascript Skripts auf die verschiedenen Inhalte einer Webseite zugreifen und ändern. <br><br> Beim Laden
                         einer Webseite wird von dieser ein Modell erstellt, dieses Modell wird auch als DOM – Baum bezeichnet. Ein DOM – Baum besteht aus sogenannten Knoten. Jeder Knoten beschreibt ein Objekt mit Methode und Eigenschaft.<br><br> Es gibt
                         mehrere Befehle, die auf ein Element in einem solchen Baum zuzugreifen können.<br> - querySelector(‘css selector’) – Diese Methode nutzt die CSS – Selektorsyntax um ein oder mehrere Elemente auszuwählen. Wählt jeweils einziges
-                        Element.<br> - getElementsByClassName(‘class selector’) – Diese Methode wählt ein oder mehrere Elemente anhand ihres Wertes im class – Attribut.<br> - getElementsByTagName(‘tagName’) – Wählt alle Elemente auf der Seite aus, die
-                        den angegebenen Tag – Namen haben.<br> - querySelectorAll(‘css selector’) – Nutzt die CSS – Selektorsyntax, um ein oder mehrere Elemente auszuwählen.<br>
+                        Element.
+                        <br> - getElementsByClassName(‘class selector’) – Diese Methode wählt ein oder mehrere Elemente anhand ihres Wertes im class – Attribut.<br> - getElementsByTagName(‘tagName’) – Wählt alle Elemente auf der Seite aus, die den angegebenen
+                        Tag – Namen haben.<br> - querySelectorAll(‘css selector’) – Nutzt die CSS – Selektorsyntax, um ein oder mehrere Elemente auszuwählen.<br>
                     </p>
 
                 </div>
@@ -498,8 +499,8 @@
                         <h2 id="JavaScript">SQL-Injection</h2><br>
                         <p>SQL-Injection ist wenn beispielsweise in ein Feld in das ein Name eingegeben werden soll welcher dann in ein SQL Statement eingef&uuml;gt wird um einen Output zu erzielen, SQL Code eingegeben wird welcher dann unwissentlich ausgef&uuml;hrt
                             wird und so entweder die Datenbank besch&auml;digt oder sensible Daten wie Passw&ouml;rter oder E-Mail Adressen an den Angreifer ausgibt.</p>
-                        <p>SQL-Injection kann ganz einfach mit der Funktion &lsquo;mysql_real_escape_string()&rsquo; behoben werden welche den Input sicher f&uuml;r eine Eingabe in eine Datenbank macht, aber dennoch gibt es leider immernoch zu viele Seiten
-                            welche mangelnden Schutz gegen SQL-Injection Angriffe haben.</p>
+                        <p>SQL-Injection kann ganz einfach mit der Funktion &lsquo;mysql_real_escape_string()&rsquo; behoben werden welche den Input sicher f&uuml;r eine Eingabe in eine Datenbank macht, aber trotzdem gibt es leider immernoch zu viele Seiten
+                            welche mangelnden Schutz gegen SQL-Injections haben.</p>
                     </div>
                 </div>
 
@@ -509,8 +510,8 @@
                     </div>
                     <div class="col-md-9">
                         <h2 id="JavaScript">Cross-Site Scripting</h2><br>
-                        <p>XXS(Cross-Site Scripting) ist wenn in ein Feld welches dann andere sehen k&ouml;nnen wie einen Kommentar, ein &lt;script&gt;-Tag eingef&uuml;gt wird was verursacht dass man in dem Browser von jemandem Js ausf&uuml;hren kann. Dies
-                            kann etwas harmloses sein das zum Beispiel alle Bilder ersetzt durch Bilder von Katzen, oder etwas schlechtes wie das &auml;ndern von Links so das sie zu Phising Seiten f&uuml;hren.</p>
+                        <p>XXS(Cross-Site Scripting) ist wenn in ein Feld welches dann andere sehen k&ouml;nnen wie einen Kommentar, ein &lt;script&gt;-Tag eingef&uuml;gt wird was verursacht dass man in dem Browser von jemandem JavaScript ausf&uuml;hren
+                            kann. Dies kann etwas harmloses sein das zum Beispiel alle Bilder ersetzt durch Bilder von Katzen, oder etwas schlechtes wie das &auml;ndern von Links so das sie zu Phising Seiten f&uuml;hren.</p>
                         <p>XXS kann ebenfalls ganz einfach mit 'htmlspecialchars()' verhindert werden. Leider sind hier auch viele Seiten nicht zureichend abgesichert.</p>
 
                     </div>
