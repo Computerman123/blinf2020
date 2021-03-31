@@ -502,7 +502,7 @@
                 </div>
                 <div class="col-md-9">
                     <h2 id="JavaScript">Security</h2><br>
-                    <p>Wenn man einen Input vom User entgegennimmt ist es wichtig zu überprüfen ob dieser eine Gefahr darstellt da der User zum Beispiel Code eingeben könnte der eine Datenbank löscht oder sogar den Inhalt der Datenbank irgendwohin sendet.</p>
+                    <p>Wenn man einen Input vom User entgegennimmt, ist es wichtig zu überprüfen, ob dieser eine Gefahr darstellt. User können zum Beispiel Code eingeben, der eine Datenbank löscht oder sogar den Inhalt der Datenbank jemandem zusendet.</p>
 
                 </div>
             </div>
@@ -513,8 +513,8 @@
                 </div>
                 <div class="col-md-9">
                     <h2 id="JavaScript">SQL-Injection</h2><br>
-                    <p>SQL-Injection ist dann wenn beispielsweise in ein Feld in das ein Name eingegeben werden soll welcher dann in ein SQL Statement eingef&uuml;gt wird um einen Output zu erzielen, SQL Code eingegeben wird welcher dann unwissentlich ausgef&uuml;hrt wird und so entweder die Datenbank besch&auml;digt oder sensible Daten wie Passw&ouml;rter oder E-Mail Adressen an den Angreifer ausgibt.</p>
-                    <p>SQL-Injection kann ganz einfach mit der Funktion &lsquo;mysql_real_escape_string()&rsquo; behoben werden welche den Input sicher f&uuml;r eine Eingabe in eine Datenbank macht, aber dennoch gibt es leider immernoch zu viele Seiten welche mangelnden Schutz gegen SQL-Injection Angriffe haben.</p>
+                    <p>SQL-Injection ist, wenn beispielsweise in ein Feld, in das ein Name eingegeben werden soll, ein SQL Code eingegeben wird, der dann erwartungsgemäss ausgef&uuml;hrt wird und so entweder die Datenbank besch&auml;digt, oder sensible Daten wie Passw&ouml;rter oder E-Mail Adressen an den Angreifer ausgibt.</p>
+                    <p>SQL-Injections können ganz einfach mit der Funktion &lsquo;mysql_real_escape_string()&rsquo; verhindert werden, die den Input sicher vor einer SQL-Code Eingaben macht. Die Sonderzeichen bzw. Steuerungszeichen werden ausser Kraft gesetzt und als normalen Text gewertet. Leider gibt es immer noch zu viele Seiten, die mangelnden Schutz gegen SQL-Injection Angriffe haben.</p>
                 </div>
             </div>
 
@@ -524,8 +524,8 @@
                 </div>
                 <div class="col-md-9">
                     <h2 id="JavaScript">Cross-Site Scripting</h2><br>
-                    <p>XXS(Cross-Site Scripting) ist dann wenn in ein Feld welches dann andere sehen k&ouml;nnen wie einen Kommentar, ein &lt;script&gt;-Tag eingef&uuml;gt wird was verursacht dass man in dem Browser von jemandem Js auff&uuml;hren kann. Dies kann etwas harmloses sein das zum Beispiel alle Bilder ersetzt durch Bilder von Katzen, oder etwas schlechtes wie das &auml;ndern von Links so das sie zu Phising Seiten f&uuml;hren.</p>
-                    <p>XXS kann ebenfalls ganz einfach mit htmlspecialchars() verhindert werden. Leider sind hier auch viele Seiten nicht zureichend abgesichert.</p>
+                    <p>XSS(Cross-Site Scripting) ist, wenn in ein Feld, das andere sehen k&ouml;nnen, wie zum Beispiel ein Kommentar, ein &lt;script&gt;-Tag eingef&uuml;gt wird. Dies hat zur Folge, dass dieser Code, JavaScript, ausgeführt wird, sobald diese Seite geöffnet wird. Dies kann etwas harmloses sein, zum Beispiel alle Bilder ersetzt durch Bilder von Katzen, oder etwas schlechtes wie das &auml;ndern von Links, so dass sie zu Phising Seiten f&uuml;hren.</p>
+                    <p>XSS kann ebenfalls ganz einfach mit htmlspecialchars() verhindert werden. Leider sind hier auch viele Seiten nicht ausreichend geschützt.</p>
 
                 </div>
             </div>
