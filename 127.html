@@ -125,7 +125,26 @@
                 <div class="col-md-9">
                     <h2 id="dns">DNS</h2><br>
 
-                    <!--Text hier-->
+                    <p>
+                        DNS ist sehr wichtig weil Computer mit IP-Adressen kommunizieren aber Menschen diese nicht verstehen, darum ist es die aufgabe von DNS aus Namen IP-Adressen und umgekehrt zu machen. Dies passiert in einem Prozess aus mehreren Schritten: <br />
+                        <ol>
+                            <li>Der User gibt beim Browser die Addresse "example.com" ein.</li>
+                            <li>Der Browser schaut in seinem Cache nach ob die Seite schon einmal aufgerufen wurde, kann sie aber nicht finden.</li>
+                            <li>Der Browser fragt das System ob es die IP der Seite kennt, dieses kennt sie auch nicht.</li>
+                            <li>Das System schaut nun nach ob es einen DNS Server kennt, es kennt einen(meistens den vom ISP).</li>
+                            <li>Das System schikt nun eine Anfrage für "example.com" an den DNS Server.</li>
+                            <li>Der DNS Server überprüft nun ob "example.com" in seinem Cache ist, dies ist aber nicht der Fall. <br />Jeder DNS Server hat hauptsächlich die aufgabe zu wissen wo er die Root-DNS Server finden kann.</li>
+                            <li>Der DNS Server sendet nun die Anfrage für "example.com" an einen der 13 Root-DNS Server.</li>
+                            <li>Der Root-DNS Server sieht sich nun die Top-level-comain ".com" an und antwortet mit der IP der DNS-Servers der für ".com" zuständig ist.</li>
+                            <li>Der DNS Server sendet nun die Anfrage für "example.com" an den ".com"-server.</li>
+                            <li>Der ".com"-server weiss bei welchem authoritativen DNS server der Eintrag liegt und antwortet mit dessen IP.</li>
+                            <li>Der DNS Server fragt den authoritativen DNS Server nun nach "example.com" ab.</li>
+                            <li>Der authoritative DNS Server weiss welche IP "example.com" hat und sendet diese als Antwort.</li>
+                            <li>Jetzt antwortet der DNS Server dem System mit der IP von "example.com" und dieses gibt es an den Browser weiter</li>
+                            <li>Der Browser stellt nun eine Verbindung mit "example.com" her und verbindet sich.</li>
+                            <li>Der Browser zeigt dem User die Webseite an.</li>
+                        </ol>
+                    </p>
 
                 </div>
             </div>
