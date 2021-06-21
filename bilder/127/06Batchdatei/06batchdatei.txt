@@ -1,0 +1,8 @@
+rem Netzlaufwerk trennen 
+
+net use n: /delete 
+
+
+rem Netzlaufwerk verbinden 
+
+net use n: \\SRV-DC-01\Public /persistent:no 
