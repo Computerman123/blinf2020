@@ -22,8 +22,8 @@
                     <img src="bilder/logo.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -35,12 +35,13 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Lerndokus
-                        </a>
+                                Lerndokus
+                            </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="304.html">304-Pc installieren und konfigurieren</a>
-                                <a class="dropdown-item" href="305.html">305-Multiusersysteme installieren, konfigurieren
-                                und administrieren</a>
+                                <a class="dropdown-item" href="305.html">305-Multiusersysteme installieren,
+                                    konfigurieren
+                                    und administrieren</a>
                                 <a class="dropdown-item" href="101.html">101-Webauftritt gestalten und realisieren</a>
                                 <a class="dropdown-item" href="289.html">289-CMS einsetzen und bewirtschaften</a>
                                 <a class="dropdown-item" href="105.html">105-Datenbanken mit SQL bearbeiten</a>
@@ -143,7 +144,8 @@
                         Risikogebunden: Bei einem RAID-0-System sind alle Daten verloren, wenn eine Festplatte im RAID – System ausfällt. Ausserdem bremst das Netzwerk meist die gewonnene Geschwindigkeit aus. </p>
 
                     <p><strong>RAID 1 </strong>(ab zwei Festplatten): Bei RAID 1 steht die Datensicherheit im Vordergrund. Alle Daten werden doppelt gespeichert, sodass auf zwei Festplatten jeweils dieselben Daten liegen. Dadurch, dass die Daten kopiert
-                        werden, ist im Endeffekt auch nur halb so viel Speicherplatz belegbar, als eingebaut, da die andere Hälfte mit den Kopien belegt wird. Fällt eine der Festplatten aus, wird sofort sie Kopie ausgelesen.</p>
+                        werden, ist im Endeffekt auch nur halb so viel Speicherplatz belegbar, als eingebaut, da die andere Hälfte mit den Kopien belegt wird. Fällt eine der Festplatten aus, wird sofort sie Kopie ausgelesen.
+                    </p>
 
                     <p><strong>RAID 5 </strong>(ab drei Festplatten): In einem RAID-5-System sind die Daten ebenfalls vor dem Ausfall einer Festplatte geschützt. Im Unterschied zu RAID 1 verliert man weniger Speicherplatz. Während bei einem RAID 1 - System
                         nur die Hälfte des Speicherplatzes genutzt werden kann, ist es bei RAID 5 die Anzahl der Festplatten minus einer. Werden zum Beispiel vier 500-GB-Harddisks zum Einsatz gebracht, können 1500 GB belegt werden. Der Rest ist für die
@@ -171,16 +173,20 @@
                         <ol>
                             <li>Der User gibt beim Browser die Addresse "example.com" ein.</li>
                             <li>Der Browser schaut in seinem Cache nach, ob die Seite schon einmal aufgerufen wurde, kann sie aber nicht finden.</li>
-                            <li>Der Browser fragt das System ob es die IP-Adresse der Seite kennt, dieses kennt sie auch nicht.</li>
-                            <li>Das System schaut nun nach ob es einen DNS Server kennt, es kennt einen(meistens den vom ISP).</li>
+                            <li>Der Browser fragt das System ob es die IP-Adresse der Seite kennt, dieses kennt sie auch nicht.
+                            </li>
+                            <li>Das System schaut nun nach ob es einen DNS Server kennt, es kennt einen(meistens den vom ISP).
+                            </li>
                             <li>Das System schickt nun eine Anfrage für "example.com" an den DNS Server.</li>
                             <li>Der DNS Server überprüft nun ob "example.com" in seinem Cache ist, dies ist aber nicht der Fall. <br />Jeder DNS Server hat hauptsächlich die aufgabe zu wissen wo er die Root-DNS Server finden kann.</li>
-                            <li>Der DNS Server sendet nun die Anfrage für "example.com" an einen der 13 Root-DNS Server.</li>
+                            <li>Der DNS Server sendet nun die Anfrage für "example.com" an einen der 13 Root-DNS Server.
+                            </li>
                             <li>Der Root-DNS Server sieht sich nun die Top-level-comain ".com" an und antwortet mit der IP der DNS-Servers der für ".com" zuständig ist.</li>
                             <li>Der DNS Server sendet nun die Anfrage für "example.com" an den ".com"-server.</li>
                             <li>Der ".com"-server weiss bei welchem authoritativen DNS server der Eintrag liegt und antwortet mit dessen IP.</li>
                             <li>Der DNS Server fragt den authoritativen DNS Server nun nach "example.com" ab.</li>
-                            <li>Der authoritative DNS Server weiss welche IP "example.com" hat und sendet diese als Antwort.</li>
+                            <li>Der authoritative DNS Server weiss welche IP "example.com" hat und sendet diese als Antwort.
+                            </li>
                             <li>Jetzt antwortet der DNS Server dem System mit der IP von "example.com" und dieses gibt es an den Browser weiter</li>
                             <li>Der Browser stellt nun eine Verbindung mit "example.com" her und verbindet sich.</li>
                             <li>Der Browser zeigt dem User die Webseite an.</li>
@@ -201,7 +207,8 @@
 
                     <h3>DNS Installieren und konfigurieren</h3>
 
-                    <p>Den Servern eine fixe IP-Adresse gemäs Adresskonzept hinzufügen und sich selbst als DNS Server hinzufügen.</p>
+                    <p>Den Servern eine fixe IP-Adresse gemäs Adresskonzept hinzufügen und sich selbst als DNS Server hinzufügen.
+                    </p>
 
                 </div>
             </div>
@@ -1005,7 +1012,8 @@
                     <p>
 
                         <b>DHCP Installieren</b><br /> Spätestens zu diesem Zeitpunkt benötigt der Server eine fixe IP – Adresse. Wenn er diese hat, kann nun im Servermanager >> Dashboard >> Tools >> Rollen und Features hinzufügen der DHCP – Dienst installiert
-                        werden. </p>
+                        werden.
+                    </p>
 
 
                 </div>
@@ -1023,7 +1031,8 @@
                     <p>
 
                         <b>DHCP Konfigurieren Schritt 1</b><br /> Nach dem die Installationsschritte durchlaufen sind und der DHCP – Dienst unter Servermanager >> Dashboard >> Verwalten >> DHCP geöffnet wurde, kann mit einem Rechtsklick auf den Server
-                        und der Option ‘Neue Zone’ eine neue Zone erstellt werden. Dazu muss zuerst einmal ein Name für den Bereich definiert werden.</p>
+                        und der Option ‘Neue Zone’ eine neue Zone erstellt werden. Dazu muss zuerst einmal ein Name für den Bereich definiert werden.
+                    </p>
 
                 </div>
             </div>
@@ -1040,7 +1049,8 @@
                     <p>
 
                         <b>DHCP Konfigurieren Schritt 2</b><br /> Im zweiten Schritt wird der Bereich für die IPs festgelegt, die dynamisch vergeben werden. Man kann bestimmte IPs und bestimmte Bereiche ausschliessen, die darin definierten IP – Adressen
-                        werden dann nicht vergeben.</p>
+                        werden dann nicht vergeben.
+                    </p>
 
                 </div>
             </div>
@@ -1057,7 +1067,8 @@
                     <p>
 
                         <b>DHCP Konfigurieren Schritt 3</b><br /> Im dritten Schritt wird die Leasedauer definiert. Die Leasedauer definiert, wie lange ein Client eine IP – Adresse verwenden kann. Standardmässig sind acht Tage eingetragen. Dabei kann
-                        man es getrost belassen, es sei denn, die Richtlinien oder Anforderungen schreiben etwas anderes vor. </p>
+                        man es getrost belassen, es sei denn, die Richtlinien oder Anforderungen schreiben etwas anderes vor.
+                    </p>
 
                 </div>
             </div>
@@ -1073,7 +1084,8 @@
 
                     <p>
 
-                        <b>DHCP Konfigurieren Schritt 4</b><br /> Im 4. Schritt wird entschieden, ob auch direkt die Konfigurationen für den neuen Bereich gemacht werden.</p>
+                        <b>DHCP Konfigurieren Schritt 4</b><br /> Im 4. Schritt wird entschieden, ob auch direkt die Konfigurationen für den neuen Bereich gemacht werden.
+                    </p>
 
                 </div>
             </div>
@@ -1089,7 +1101,8 @@
 
                     <p>
 
-                        <b>DHCP Konfigurieren Schritt 5</b><br /> Im fünften Schritt wird der Router definiert. Dazu muss das Standardgateway eingetragen werden. </p>
+                        <b>DHCP Konfigurieren Schritt 5</b><br /> Im fünften Schritt wird der Router definiert. Dazu muss das Standardgateway eingetragen werden.
+                    </p>
 
                 </div>
             </div>
@@ -1105,7 +1118,8 @@
 
                     <p>
 
-                        <b>DHCP Konfigurieren Schritt 6</b><br /> Zunächst wird die Domäne und die IPs der DNS-Server angegeben. </p>
+                        <b>DHCP Konfigurieren Schritt 6</b><br /> Zunächst wird die Domäne und die IPs der DNS-Server angegeben.
+                    </p>
 
                 </div>
             </div>
@@ -1138,7 +1152,8 @@
 
                     <p>
 
-                        <b>DHCP Konfigurieren Schritt 8</b><br /> Im letzten Schritt wird entschieden, ob der Bereich direkt aktiviert wird, oder ob er später aktiviert wird. </p>
+                        <b>DHCP Konfigurieren Schritt 8</b><br /> Im letzten Schritt wird entschieden, ob der Bereich direkt aktiviert wird, oder ob er später aktiviert wird.
+                    </p>
 
                 </div>
             </div>
@@ -1154,7 +1169,8 @@
 
                     <p>
 
-                        <b>DHCP Konfigurieren Schritt 9</b><br /> Zu diesem Zeitpunkt sind die ersten Konfigurationen Abgeschlossen.</p>
+                        <b>DHCP Konfigurieren Schritt 9</b><br /> Zu diesem Zeitpunkt sind die ersten Konfigurationen Abgeschlossen.
+                    </p>
 
                 </div>
             </div>
@@ -1170,7 +1186,8 @@
 
                     <p>
 
-                        <b>DHCP Konfigurieren Schritt 10</b><br /> Zunächst muss aber unter Aktionen >> Bereichsoptionen der DNS angepasst werden.</p>
+                        <b>DHCP Konfigurieren Schritt 10</b><br /> Zunächst muss aber unter Aktionen >> Bereichsoptionen der DNS angepasst werden.
+                    </p>
 
                 </div>
             </div>
@@ -1186,7 +1203,8 @@
 
                     <p>
 
-                        <b>DHCP Konfigurieren Schritt 11</b><br /> Mit dem Öffnen des Dialogfensters ‘Eigenschaften von IPv4’ kann/muss das dynamische aktualisieren angepasst werden. </p>
+                        <b>DHCP Konfigurieren Schritt 11</b><br /> Mit dem Öffnen des Dialogfensters ‘Eigenschaften von IPv4’ kann/muss das dynamische aktualisieren angepasst werden.
+                    </p>
 
                 </div>
             </div>
@@ -1201,7 +1219,8 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>DHCP Konfigurieren Schritt 12</b><br /> Wenn diese Konfigurationen stimmen, sollte nun hinter ‘Bereich’ im Reiter ‘Aktionen’ der IP – Adressbereich stehen. </p>
+                        <b>DHCP Konfigurieren Schritt 12</b><br /> Wenn diese Konfigurationen stimmen, sollte nun hinter ‘Bereich’ im Reiter ‘Aktionen’ der IP – Adressbereich stehen.
+                    </p>
 
                 </div>
             </div>
@@ -1218,7 +1237,8 @@
                     <p>
 
                         <b>DHCP Konfigurieren Schritt 13</b><br /> Ob das Ganze jetzt auch Ordnungsgemäss funktioniert, kann ganz einfach mit dem cmd und ipconfig getestet werden. Diesen Test führt man am besten sowohl auf dem Server als auch an mindestens
-                        zwei Clients durch. </p>
+                        zwei Clients durch.
+                    </p>
 
                 </div>
             </div>
@@ -1226,15 +1246,17 @@
             <div class="row">
                 <div class="col-md-3">
 
-                    <img src="bilder/127/dhcp" alt="">
+                    <!-- Bild -->
 
                 </div>
                 <div class="col-md-9">
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        <b>Active Directory</b><br /> Das Active Directory (häufig AD genannt) von Windows ist die Datenbank, in der die ganze Konfiguration des Netzwerks gespeichert wird. Dazu verwaltet es verschiedene Objekte in einem Netzwerk wie beispielsweise
+                        Benutzer, Gruppen, Computer, Dienste, Server, Dateifreigaben und andere Geräte wie Drucker und Scanner und deren Eigenschaften. <br> Mit Hilfe von Active Directory kann ein Administrator die Informationen der Objekte organisieren,
+                        bereitstellen und überwachen. Den Benutzern des Netzwerkes können Zugriffsbeschränkungen erteilt werden. So darf zum Beispiel nicht jeder Benutzer jede Datei ansehen oder jeden Drucker verwenden.
+
                     </p>
                 </div>
             </div>
@@ -1249,8 +1271,7 @@
                     <h2 id="ad">Active Directory installieren und konfigurieren</h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Wie jeden anderen Dienst, installiert man Active Directory über die Schaltfläche „Rollen und Features hinzufügen“. Unter den Serverrollen wählt man die Active Directory Domänendienste aus.
                     </p>
                 </div>
             </div>
@@ -1265,8 +1286,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Nach der Installation muss man noch Berechtigungen konfigurieren, da der Server an diesem Punkt noch nicht weiss wie genau er mit Active Directory umgehen muss.
                     </p>
                 </div>
             </div>
@@ -1281,8 +1301,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        In der Konfiguration wählt man aus, welche Aktion man mit dem Server machen will. In unserem Fall fügen wir eine neue Gesamtstruktur hinzu. Unten im Textfeld geben wir der Domäne einen Namen
                     </p>
                 </div>
             </div>
@@ -1297,8 +1316,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        In den Domänencontrolleroptionen wählen wir aus wie wir den AD-Dienst konfiguriert haben wollen. In unserem Fall gemäss Bild. Das DSRM-Kennwort muss selbst gesetzt werden und am besten sicher verwahrt werden.
                     </p>
                 </div>
             </div>
@@ -1313,8 +1331,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Da wir im vorherigen Fenster den Haken bei DNS gesetzt haben, müssen wir nun die DNS Delegierung einrichten. Dafür müssen wir nur einen Benutzer angeben, welcher die Rechte hat, die DNS-Einstellungen zu bearbeiten
                     </p>
                 </div>
             </div>
@@ -1329,8 +1346,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Im Normalfall kann der lokale Administrator dafür verwendet werde, da dieser sowieso alle Rechte hat.
                     </p>
                 </div>
             </div>
@@ -1345,8 +1361,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Wie man nun sehen kann, ist der Administrator erfolgreich unter der DNS-Delegierung eingetragen
                     </p>
                 </div>
             </div>
@@ -1361,8 +1376,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Als nächstes wird man nach einem NetBIOS-Domänenamen gefragt. Diesen kann man einfach so lassen wie er ist.
                     </p>
                 </div>
             </div>
@@ -1377,8 +1391,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Nachdem wir NetBIOS gemacht haben, wird man gebeten, die Speicherorte der Datenbanken und Protokolle zu überprüfen. Standardmässig sollte alle korrekt sein.
                     </p>
                 </div>
             </div>
@@ -1393,8 +1406,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Fast zum Schluss kommt die Voraussetzungsprüfung. Hier wird überprüft ob die gemachten Angaben in Ordnung sind für Active Directory. Wenn oben über allem der grüne Haken steht kann man auf «Installieren» klicken und man hat fertig konfiguriert.
                     </p>
                 </div>
             </div>
@@ -1409,8 +1421,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Bevor man weitergeht muss man die Basiseinstellungen noch einmal überprüfen. Im Bild haben wie die IPv4-Einstellungen.
                     </p>
                 </div>
             </div>
@@ -1425,8 +1436,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Als nächstes muss im DNS-Dienst ein weiteres Feld ausgewählt werden. Und zwar, dass die Zone in Active Directory gespeichert wird. Das verbessert die Zusammenarbeit der beiden Dienste. Dasselbe macht man in der Reverse-Lookup Zone.
                     </p>
                 </div>
             </div>
@@ -1441,8 +1451,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Als nächstes geht man in die Eigenschaften der Zone und wählt nur sichere Updates aus. Diese werden dann vom AD als sicher eingestuft. Dasselbe macht man in der Reverse-Lookup Zone.
                     </p>
                 </div>
             </div>
@@ -1457,56 +1466,8 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3">
-
-                    <img src="bilder/127/ad/15reverse-zonentyp.PNG" alt="">
-
-                </div>
-                <div class="col-md-9">
-                    <h2 id="#"></h2><br>
-
-                    <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3">
-
-                    <img src="bilder/127/ad/16reverse-updates-nur-sichere.PNG" alt="">
-
-                </div>
-                <div class="col-md-9">
-                    <h2 id="#"></h2><br>
-
-                    <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3">
-
-                    <img src="bilder/127/ad/17reverse-nameserver-testen.PNG" alt="">
-
-                </div>
-                <div class="col-md-9">
-                    <h2 id="#"></h2><br>
-
-                    <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Damit man sichergehen kann, dass alle Anfragen an den Primären oder Sekundären Domänencontroller gehen, überprüft man ob im Reiter Namensserver beide Domänencontroller eingetragen sind mit Hostname und IP-Adresse. Dasselbe macht man in der Reverse-Lookup
+                        Zone.
                     </p>
                 </div>
             </div>
@@ -1521,8 +1482,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Als nächstes öffnet man den DHCP-Manager und autorisiert den DHCP-Server über einen Rechtsklick.
                     </p>
                 </div>
             </div>
@@ -1537,8 +1497,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Man merkt, dass es funktioniert hat, wenn die beiden Server nun ein kleines grüne Symbol rechts unten haben.
                     </p>
                 </div>
             </div>
@@ -1553,8 +1512,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Bevor man sicher ist, dass alles funktioniert kann man eine schnelle Diagnose vornehmen. Dies macht man indem man im CMD den Befehl «dcdiag» eingibt und ausführt.
                     </p>
                 </div>
             </div>
@@ -1569,8 +1527,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Damit mit der IP-Konfiguration durch das AD alles funktioniert muss man unter Active Directory Standorte und Dienste das Subnetz angeben in welchem man sich befindet. Im leeren Raum unter Subnets Rechtsklick und ein neues Subnetz hinzufügen.
                     </p>
                 </div>
             </div>
@@ -1585,8 +1542,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Nun unter Präfix die Net-ID angeben im Format des Beispiels oben. In unserem Fall ist das 192.168.228.0/24.
                     </p>
                 </div>
             </div>
@@ -1601,8 +1557,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
-                        laboriosam possimus.
+                        Wenn es so aussieht wie in diesem Bild, hat es funktioniert. Nun ist das Subnetz im AD eingetragen.
                     </p>
                 </div>
             </div>
@@ -2355,7 +2310,8 @@
                     <h2 id="#"></h2><br>
 
                     <h4></h4>
-                    <p>Wenn man sich nun beim Benutzer anmeldet, wird das Laufwerk mit dem Laufwerksbuchstaben angezeigt.</p>
+                    <p>Wenn man sich nun beim Benutzer anmeldet, wird das Laufwerk mit dem Laufwerksbuchstaben angezeigt.
+                    </p>
 
                 </div>
             </div>
@@ -2552,7 +2508,8 @@
                     <h2 id="#"></h2><br>
 
                     <h4></h4>
-                    <p>Hier muss man bei "Besitzer:" auf "ändern" klicken und dann die Domänen-Admins als Besitzer machen.</p>
+                    <p>Hier muss man bei "Besitzer:" auf "ändern" klicken und dann die Domänen-Admins als Besitzer machen.
+                    </p>
 
                 </div>
             </div>
@@ -2718,7 +2675,8 @@
                     <h2 id="#"></h2><br>
 
                     <h4></h4>
-                    <p>Falls man schon einen Treiber hat, kann man den auswählen, ansosten eifach einen neuen Treiber installieren.</p>
+                    <p>Falls man schon einen Treiber hat, kann man den auswählen, ansosten eifach einen neuen Treiber installieren.
+                    </p>
 
                 </div>
             </div>
@@ -2809,7 +2767,8 @@
                     <h2 id="#"></h2><br>
 
                     <h4></h4>
-                    <p>Wenn man nun bei einem Benutzer auf Drucker & Scanner geht, sollte dort der Drucker angezeit werden.</p>
+                    <p>Wenn man nun bei einem Benutzer auf Drucker & Scanner geht, sollte dort der Drucker angezeit werden.
+                    </p>
 
                 </div>
             </div>
@@ -2824,7 +2783,8 @@
                     <h2 id="backup">Backup</h2><br>
 
                     <h4></h4>
-                    <p>Um ein Backup erstellen zu können, muss man zuerst den Dienst "Windows Server-Sicherung" installieren.</p>
+                    <p>Um ein Backup erstellen zu können, muss man zuerst den Dienst "Windows Server-Sicherung" installieren.
+                    </p>
 
                 </div>
             </div>
@@ -2885,7 +2845,8 @@
                     <h2 id="#"></h2><br>
 
                     <h4></h4>
-                    <p>Nun muss man angeben, wie viel mal am Tag ein Backup erstellt werden muss und um welche Uhrzeit.</p>
+                    <p>Nun muss man angeben, wie viel mal am Tag ein Backup erstellt werden muss und um welche Uhrzeit.
+                    </p>
 
                 </div>
             </div>
@@ -2900,7 +2861,8 @@
                     <h2 id="#"></h2><br>
 
                     <h4></h4>
-                    <p>Da wir das Backup auf ein Volume machen wollen, habe wir "Sicherung auf einem Volume erstellen" ausgewählt.</p>
+                    <p>Da wir das Backup auf ein Volume machen wollen, habe wir "Sicherung auf einem Volume erstellen" ausgewählt.
+                    </p>
 
                 </div>
             </div>
@@ -2961,7 +2923,8 @@
                     <h2 id="#"></h2><br>
 
                     <h4></h4>
-                    <p>Hier muss man angeben, was man wiederherstellen will, wir wollten nur gewisse Daten wiederherstellen.</p>
+                    <p>Hier muss man angeben, was man wiederherstellen will, wir wollten nur gewisse Daten wiederherstellen.
+                    </p>
 
                 </div>
             </div>
