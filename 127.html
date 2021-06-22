@@ -75,6 +75,10 @@
                         <li>DNS
                             <li>
                     </a>
+                    <a href="#dns_installieren_konfigurieren">
+                        <li>DNS installieren und konfigurieren
+                            <li>
+                    </a>
                     <a href="#DHCP">
                         <li>DHCP
                             <li>
@@ -161,9 +165,9 @@
 
                 </div>
                 <div class="col-md-9">
-                    <h2 id="#"></h2><br>
+                    <h2 id="dns_installieren_konfigurieren"></h2><br>
 
-                    <h3>DNS Installieren</h3>
+                    <h3>DNS Installieren und konfigurieren</h3>
 
                     <p>Den Servern eine fixe IP-Adresse gemäs Adresskonzept hinzufügen und sich selbst als DNS Server hinzufügen.</p>
 
@@ -964,7 +968,7 @@
 
                 </div>
                 <div class="col-md-9">
-                    <h2 id="DHCP">DHCP</h2><br>
+                    <h2 id="DHCP">DHCP istallieren und konfigurieren</h2><br>
 
                     <p>
 
@@ -1210,7 +1214,7 @@
 
                 </div>
                 <div class="col-md-9">
-                    <h2 id="ad">Active Directory</h2><br>
+                    <h2 id="ad">Active Directory installieren und konfigurieren</h2><br>
 
                     <p>
                         <b>Platzhalter für Schritt</b><br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consectetur illum officia dolorum quos voluptatum eveniet natus minus hic facere! Sint impedit corrupti vel nisi. Fugit odit assumenda
@@ -1982,8 +1986,8 @@
                     <h2 id="gpo">Group Policy</h2><br>
 
                     <p>
-                        <b>GPOs Einrichten</b><br /> GPOs sind wichtig, um unberechtigten Personen den Zugriff auf bestimmte Elemente zu verweigern. Umsetzen kann man das unter Servermanager >> Dashboard >> Verwalten >> Gruppenrichtlinienverwaltung. Mit
-                        einem Rechtsklick auf die Domäne kann ein neues Objekt erstellt werden und mit Rechtsklick auf das neue Objekt kann es bearbeitet werden. Bei Laufwerkzuordnungen macht man das unter den Benutzerkonfigurationen.
+                        GPOs sind wichtig, um unberechtigten Personen den Zugriff auf bestimmte Elemente zu verweigern. Umsetzen kann man das unter Servermanager >> Dashboard >> Verwalten >> Gruppenrichtlinienverwaltung. Mit einem Rechtsklick auf die Domäne kann ein neues Objekt
+                        erstellt werden und mit Rechtsklick auf das neue Objekt kann es bearbeitet werden. Bei Laufwerkzuordnungen macht man das unter den Benutzerkonfigurationen.
 
                     </p>
                 </div>
@@ -1999,7 +2003,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>GPOs einrichten Schritt 2</b><br /> Bei der Laufwerkzuordnung kann das via Zielgruppenadressierung ablaufen. Das ist ein guter Weg, um das entsprechende Laufwerk der entsprechenden Gruppe freizugeben.
+                        Bei der Laufwerkzuordnung kann das via Zielgruppenadressierung ablaufen. Das ist ein guter Weg, um das entsprechende Laufwerk der entsprechenden Gruppe freizugeben.
                     </p>
                 </div>
             </div>
@@ -2014,7 +2018,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b>GPOs einrichten Schritt 3</b><br /> Im nächsten Fenster können die Gruppen und Benutzer ausgewählt werden.
+                        Im nächsten Fenster können die Gruppen und Benutzer ausgewählt werden.
                     </p>
                 </div>
             </div>
@@ -2026,7 +2030,7 @@
 
                 </div>
                 <div class="col-md-9">
-                    <h2 id="#">Vorbereitung nach Checkliste</h2><br>
+                    <h2 id="checkliste">Vorbereitung nach Checkliste</h2><br>
 
                     <h4>1. Server Name Ändern</h4>
 
@@ -2208,7 +2212,7 @@
 
                 </div>
                 <div class="col-md-9">
-                    <h2 id="#">Laufwerkzuordnung</h2><br>
+                    <h2 id="laufwerkzuordnung">Laufwerkzuordnung</h2><br>
 
                     <h4></h4>
                     <p>Bei den GPO's unter Laufwerkzuordnung eine neue Zuordnung erstellen. Danach muss man bei "Aktion" auf "Erstellen" umstellen und bei "Speicherort" den Freigabename des Ordners angeben. Das sieht dann wie folgt aus: \\servername\ordername</p>
@@ -2253,7 +2257,7 @@
 
                 </div>
                 <div class="col-md-9">
-                    <h2 id="#">Batchdatei</h2><br>
+                    <h2 id="batchdatei">Batchdatei</h2><br>
 
                     <h4></h4>
                     <p>Man kann ebenfalls mit einer Batchdatei ein Laufwerk zuordnen. Zuerst muss man in den sysvol Ordner gehen und dort und sripts ein neues Textdokument erstellen.</p>
@@ -2331,7 +2335,7 @@
 
                 </div>
                 <div class="col-md-9">
-                    <h2 id="#">Basisordner</h2><br>
+                    <h2 id="basisordner">Basisordner</h2><br>
 
                     <h4></h4>
                     <p>Zuerst muss man eine versteckte Freigabe auf den freigegebenen Ordner machen. Dazu muss man beim Freigabename einfach "$" anfügen.</p>
@@ -2421,7 +2425,7 @@
 
                 </div>
                 <div class="col-md-9">
-                    <h2 id="#">Profil auf Server aktualisieren</h2><br>
+                    <h2 id="profil_aktualisieren">Profil auf Server aktualisieren</h2><br>
 
                     <h4></h4>
                     <p>Damit die Profile auf dem Server aktualisiert werden, muss man zuerst einen Ordner erstellen. Dieser Ordner muss eine versteckte Freigabe haben, deswegen muss man nach dem Freigabename ein "$" anfügen.</p>
@@ -2588,10 +2592,9 @@
 
                 </div>
                 <div class="col-md-9">
-                    <h2 id="#"></h2><br>
+                    <h2 id="profil_zurücksetzen">Profil zurücksetzen</h2><br>
 
                     <h4></h4>
-                    <p><b>Profil zurücksetzen</b></p>
                     <p>Damit das Profil eines Benutzers nach Abmelden wieder zurückgesetzt wird, muss man nur eine Datei ändern, nämlich "NTUSER.DAT". Bei dieser Datei muss man die Endung zu ".MAN" machen. Ab diesem Zeitpunkt wird das Profil nach Abmelden
                         immer auf diesen Stand zurückgesetzt.</p>
 
@@ -2605,7 +2608,7 @@
 
                 </div>
                 <div class="col-md-9">
-                    <h2 id="#">Printserver</h2><br>
+                    <h2 id="printserver">Printserver</h2><br>
 
                     <h4></h4>
                     <p>Zuerst muss man den Druck- und Dokumentdienst installieren.</p>
@@ -2786,7 +2789,7 @@
 
                 </div>
                 <div class="col-md-9">
-                    <h2 id="#">Backup</h2><br>
+                    <h2 id="backup">Backup</h2><br>
 
                     <h4></h4>
                     <p>Um ein Backup erstellen zu können, muss man zuerst den Dienst "Windows Server-Sicherung" installieren.</p>
