@@ -207,7 +207,7 @@
 
                     <h3>DNS Installieren und konfigurieren</h3>
 
-                    <p>Den Servern eine fixe IP-Adresse gemäs Adresskonzept hinzufügen und sich selbst als DNS Server hinzufügen.
+                    <p>Zuerst gibt man den Servers eine fixe IP-Adresse, damit die clients immer auf diese IP-Adresse als DNS-Server zugreifen können.
                     </p>
 
                 </div>
@@ -223,7 +223,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> Die DNS Rolle über den Server Manager hinzufügen.
+                        <b></b><br /> Die DNS-Rolle dem Server wie gewohnt über "Rollen und Features hinzufügen" hinzufügen.
                     </p>
 
                 </div>
@@ -239,7 +239,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> Vom Server manager aus den DNS Manager aufrufen und mit Rechtsklick auf den server die Konfiguration starten.
+                        <b></b><br /> Nach der Installation der Rolle über die Schatfläche "Tools" den DNS-Manager öffnen und per Rechtsklick auf den Server die Konfiguration starten.
                     </p>
 
                 </div>
@@ -256,7 +256,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> Forward und Reverse auswählen.
+                        <b></b><br />Hier Wählt man aus, dass man eine Forward- und eine Reverse-Lookup-Zone einrichten will. Dieser Schritt ist wichtig, da man hier auswäht welche Art von zonen man auf dem Server eingerichtet haben will.
                     </p>
 
                 </div>
@@ -272,7 +272,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> Forward lookup Zone auswählen.
+                        <b></b><br /> In diesem Fenster wählt man aus, dass man die Forward-Lookup-Zone direkt konfigurieren möchte. Dieser Schritt ist insofern wichtig, weil man so die Konfiguration nicht im nachhinein machen muss.
                     </p>
 
                 </div>
@@ -288,7 +288,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> Primär Zone auswählen.
+                        <b></b><br /> Auswählen, dass man eine Primäre Zone einrichten möchte. Dies, weil der Server der primäre DNS-Server ist in unserem Fall.
                     </p>
 
                 </div>
@@ -304,7 +304,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> Domänennamen als Zonennamen eingeben.
+                        <b></b><br /> Domänennamen als Zonennamen eingeben, da es so am einfachsten ist sich die verschiedenen Suffixe zu merken.
                     </p>
 
                 </div>
@@ -320,7 +320,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> Dateinamen belassen.
+                        <b></b><br /> Dateinamen belassen, es macht keinen Sinn diesen zu ändern. Es bringt allerhöchstens Probleme.
                     </p>
                 </div>
             </div>
@@ -335,7 +335,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> Dynamische Updates nicht zulassen.
+                        <b></b><br /> Dynamische Updates nicht zulassen. Dies wird nur vorerst so gehalten. Wenn keine Updates zugelassen sind, muss man für jeden Client manuell einen Eintrag hinzufügen.
                     </p>
                 </div>
             </div>
@@ -350,7 +350,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> Reverse Lookup zone einrichten.
+                        <b></b><br /> Auch hier bei der Reverse-Lookup-Zone wollen wir diese direkt einrichten, da wird das sonst nachholen müssten.
                     </p>
                 </div>
             </div>
@@ -365,7 +365,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> Primärzone auswählen.
+                        <b></b><br /> Hier ebenfalls dine primäre Zone auswählen, das auch diese Zone als primäre Zone dienen soll.
                     </p>
                 </div>
             </div>
@@ -380,7 +380,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> IPv4 auswählen.
+                        <b></b><br /> Bei den IP-Einstellungen wählen wir nun IPv4, das sich IPv6 noch nicht zu 100% eingebürgert hat.
                     </p>
                 </div>
             </div>
@@ -395,7 +395,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> Netzwerk-ID eingeben.
+                        <b></b><br /> Hier muss man noch die Netzwerk-ID eingeben, damit die Reverse-Lookup-Zone sauber funktionieren kann.
                     </p>
                 </div>
             </div>
@@ -410,7 +410,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> Name bei standart belassen.
+                        <b></b><br /> Diesen Namen unbedingt beim Standard belassen. Dass die IP-Adresse rückwärts ist, ist komplett richtig.
                     </p>
                 </div>
             </div>
@@ -425,7 +425,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> IPv4 auswählen.
+                        <b></b><br /> Auch hier wählen wir wieder IPv4 aus dem selben Grund wie bei der Forward-Lookup-Zone.
                     </p>
                 </div>
             </div>
@@ -440,7 +440,8 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> Weiterleitungen festlegen.
+                        <b></b><br /> Unter Weiterleitungen wählen wir nun einen bevorzugten DNS-Server. In unserem Fall haben wir die DNS-Server von Google angegeben. Die Weiterleitungen sind wichtig, da wir auf keinen Fall alle Webseiten die es im Internet
+                        gibt, im internen DNS-Server gelistet haben. Der interne DNS-Server ist hauptsächlich für interne Dinge wie ein Intranet.
                     </p>
                 </div>
             </div>
@@ -455,7 +456,7 @@
                     <h2 id="#"></h2><br>
 
                     <p>
-                        <b></b><br /> Fertig stellen.
+                        <b></b><br /> Nun muss man nur noch auf Fertig stellen klicken und man ist mit der einrichtung fertig.
                     </p>
                 </div>
             </div>
@@ -2890,102 +2891,6 @@
 
                 </div>
             </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col-md-3">
-
-            </div>
-            <div class="col-md-9">
-                <h2 id="#">Servercheckliste</h2><br>
-
-            <h4></h4>
-            <p>Es ist wichtig, bestimmte Dinge immer wieder zu testen, um eine Fehlfunktion vorzeitig aufzuspüren.
-                Dafür gibt es Checklisten. Eine solche Checkliste könnte so aussehen:
-            </p>
-            <br>
-            <table>
-                <tr>
-                  <th>Name des Testers</th>
-                  <th>Datum</th>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                 </tr>
-              </table>
-              <table>
-                <tr>
-                  <th>Zu Überprüfen</th>
-                  <th>Ok</th>
-                  <th>Fehler</th>
-                </tr>
-                <tr>
-                  <td>Ereignisanzeige ok?</td>
-                  <td><input type="checkbox"></td>
-                  <td><input type="checkbox"></td>
-                 </tr>
-                 <tr>
-                    <td>Updates vefügbar?</td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                   </tr>
-                   <tr>
-                    <td>Meldungen vom Defender</td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                   </tr>
-                   <tr>
-                    <td>Dienste laufen korrekt</td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                   </tr>
-                   <tr>
-                    <td>Backup kontrollieren</td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                   </tr>
-                   <tr>
-                    <td>Netzwerkfunktionalität</td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                   </tr>
-                   <tr>
-                    <td>Servermanager Dashboard kontrollieren</td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                   </tr>
-                   <tr>
-                    <td>Logbuch überprüfen</td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                   </tr>
-                   <tr>
-                    <td>Taskmanager überprüfen</td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                   </tr>
-                   <tr>
-                    <td>Genug Speicherplatz zur Verfügung?</td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                   </tr>
-                   <tr>
-                    <td>Leistungsüberwachung in Ordnung?</td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                   </tr>
-                   
-              </table>
-            </div>
-        </div>
-
-    </div>
-
-        
-
-      
             <div id="footer" class="d-flex flex-column min-vh-100 text-white">
                 <footer>
                     <p id="links">&copy;Basislehrjahr Informatik 2020</p>
